@@ -8,10 +8,10 @@ const DetailsCard = () => {
         <div className="main_container_wrapper ">
             <div className="card-detail lg:md:w-[738px] w-auto mt-[40px] lg:md:mx-auto">
                 <div className="flex lg:md:justify-between">
-                    <div style={{ marginBottom: "37px" }} className="text-[42px] sm:flex justify-end self-end w-full lg:text-[58px] font-medium">Are these details
+                    <div style={{ marginBottom: "37px" }} className="text-[42px] sm:flex justify-end self-end  lg:text-[58px] font-medium">Are these details
                         Correct?</div>
                     <div className="text-center lg:md:flex lg:md:flex-col lg:md:justify-center mr-[55px]">
-                        <img src={pencil} alt="" className="lg:md:w-[76px] w-[100px] lg:md:mt-0 mt-[135px]" />
+                        <img src={pencil} alt="" className="lg:md:w-[76px] w-[51px] " />
                         <div className="lg:md:block hidden">
                             <p className="font-bold text-[12px]">Posted Data:</p>
                             <p className="text-[12px] font-light italic">Jan 3rd 2022<br></br>
@@ -30,7 +30,7 @@ const DetailsCard = () => {
                     shared )</p>
                 <Button
                     btn_text="Yes Post My Request"
-                    style={{ fontSize: "1rem", margin: "0px auto" }}
+                    style={{ fontSize: "1rem" }}
                 />
             </div>
             <p className="text-center my-[43px] text-[12px] text-[#212121] italic font-thin">By clicking 'Yes, post my requirement' , you agree to the Terms & Conditions and Privacy Policy Copyright © 2022 SmarQo.com</p>

@@ -14,10 +14,21 @@ const ReqDetails = () => {
     return (
         <div>
             <div className=''>
-                <Box sx={{ width: '100%', bgcolor: '#1D1D1D' }} className="text-white">
-                    <Tabs value={value} onChange={handleChange} centered>
-                        <Tab label="Details" className="text-white  "/>
-                        <Tab label="Smart quotes" />
+                <Box sx={{ width: '100%', bgcolor: '#1D1D1D' }} className="text-white pt-4">
+                    <p className="text-center text-[21px] text-[#707070] font-extralight">House Plans for a 2400 sqft land in Whitefield Banglore</p>
+                    <Tabs
+                        TabIndicatorProps={{
+                            style: {
+                                backgroundColor: "#707070",
+
+                            }
+                        }}
+                        value={value}
+                        onChange={handleChange}
+                        centered
+                    >
+                        <Tab label={<span className="text-white">Details</span>} />
+                        <Tab label={<span className="text-white">Smart quotes</span>} />
                     </Tabs>
                 </Box>
             </div>
@@ -41,14 +52,11 @@ const ReqDetails = () => {
                     <p className="text-[#1D43A2] text-[16px] mb-[48px]">Location detected - Whitefield, Bangalore</p>
                     <h2 className="text-[18px] mb-[13px]">Tell us more about your <span className="font-bold">requirements</span> here.</h2>
                     <p className='text-[#1D43A2] text-[16px] mb-[47px]'>Require a plan for a small site of 2400 Sqf, just the plan only. </p>
-                    <h2 className="text-[18px] mb-[13px]">How do you like to <span className="font-bold">connect</span>?</h2>
+                    <h2 className="text-[18px] mb-[13px]"><span>How</span> do you like to connect?</h2>
                     <p className="text-[#1D43A2] mb-[54px] text-[16px]">Allow professionals to contact me back ( Your contact number is
                         shared )</p>
                     <p className="text-center my-[43px] text-[13px] text-[#212121] italic font-thin flex justify-end">Post requirement  ID: 32533382</p>
-                    {/* <Button
-                    btn_text="Yes Post My Request"
-                    style={{ fontSize: "1rem", margin: "0px auto" }}
-                /> */}
+
                 </div>
 
             </div>
