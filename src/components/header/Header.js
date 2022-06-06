@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logosvg from "../../asserts/QOL.png";
+import logo from "../../asserts/sqo log.png"
 // import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import "./header.css";
 import Button from "../helper/buttons/Button";
@@ -15,10 +15,10 @@ const Header = () => {
     <div className="header_container">
       <div className="header">
         <div className="left_header">
-          <div className="logo">
-            <img src={logosvg} alt="logo" />
+          <div className="logo mr-[-45px] ml-[-45px] lg:md:ml-0">
+            <img src={logo} alt="logo" />
           </div>
-          <Link to="/smarqo" className="company_name">
+          <Link to="/smarqo" className="company_name hidden lg:md:block">
             SmarQo
           </Link>
           {/* <div className="explore">
@@ -49,18 +49,30 @@ const Header = () => {
               </div>
             ) : (
               <div className="login_signup_btns">
-                <Link to="/smarqo/login" className="login_btn btn">
+                <Link to="/smarqo/login" className="login_btn btn hidden lg:md:block">
                   Login
                 </Link>
-                <Link to="/smarqo/signup" className="signup_btn btn">
+                <Link to="/smarqo/signup" className="signup_btn btn hidden lg:md:block">
                   sign up
                 </Link>
+                {/* mobile buttons */}
+                <div className="block lg:md:hidden mt-[24px] lg:md:mt-[0px]">
+                  <Link to="/smarqo/login" className="bg-[#373737] text-white px-4 py-2  rounded text-[13px]">
+                    LOGIN
+                  </Link>
+                  <Link to="/smarqo/signup" className="text-[#373737] px-4 py-2 text-[13px]">
+                    REGISTER
+                  </Link>
+                </div>
+
               </div>
             )}
-            <Button
+            <div className="req-btn">
+            <Button            
               btn_text="post requirement"
               btn_link="/smarqo/postRequirementNow"
             />
+            </div>
           </div>
         </div>
       </div>

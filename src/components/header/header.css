@@ -33,7 +33,7 @@
 .header_container .header .left_header .logo img {
   -webkit-user-drag: none;
   /* user-drag: none; */
-  height: 40px;
+  height: 80px;
   cursor: pointer;
 }
 
@@ -124,7 +124,11 @@
   #companyExplore {
     display: none;
   }
+  .req-btn{
+    display: none;
+  }
 }
+
 
 /* .header_container
   .header
