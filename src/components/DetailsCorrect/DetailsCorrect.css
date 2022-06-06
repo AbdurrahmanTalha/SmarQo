@@ -1,0 +1,12 @@
+.card-detail {
+    background-color: #FFFFFF;
+    padding-top: 47px;
+    padding-left: 53px;
+    padding-bottom: 47px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(99, 97, 97, 0.24);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
