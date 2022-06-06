@@ -4,6 +4,7 @@ const paths = {
   signup: "/smarqo/signup",
   postRequirementNow: "/smarqo/postRequirementNow",
   detailsCorrect: "/smarqo/detailsCorrect",
+  reqDetails: "/smarqo/reqDetails",
 };
 
 module.exports = paths;
