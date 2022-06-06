@@ -16,15 +16,15 @@ const ReqDetails = () => {
         <div>
             <div className=''>
                 <Box sx={{ width: '100%', bgcolor: '#1D1D1D' }} className="text-white pt-[53px] mb-[38px]">
-                    <p className="text-center text-[21px] text-[#707070] font-extralight">House Plans for a 2400 sqft land in Whitefield Banglore</p>
+                    <p className="text-center lg:md:text-[21px] text-[13px] text-[#ffffff] font-extralight">House Plans for a 2400 sqft land in Whitefield Banglore</p>
                     <Tabs
                         TabIndicatorProps={{ style: { backgroundColor: "#707070", } }}
                         value={selectedTab}
                         onChange={handleSelectedTab}
                         centered
                     >
-                        <Tab label={<span className="text-white">Details</span>} />
-                        <Tab label={<span className="text-white">Smart quotes</span>} />
+                        <Tab label={<span className="text-[#ffffff]">Details</span>} />
+                        <Tab label={<span className="text-[#ffffff]">Smart quotes</span>} />
                     </Tabs>
                 </Box>
                 {selectedTab === 0 && <Details />}
