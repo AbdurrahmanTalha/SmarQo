@@ -4,6 +4,7 @@ import React from "react";
 import flag from "../../asserts/indiaFLag/Mask Group 3.png";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import "../../variable.css";
 
@@ -26,12 +27,15 @@ const useStyle = makeStyles({
   },
   flag: {
     height: "50px",
+    width: "70px",
   },
   email: {
-    marginTop: "10px",
+    marginTop: "16px",
+    fontWeight: 300,
   },
   number: {
-    fontSize: "1.5rem",
+    fontSize: "21px",
+    fontWeight: 400,
     marginTop: "10px",
   },
   timing: {
@@ -44,6 +48,12 @@ const useStyle = makeStyles({
     justifyContent: "end",
     gap: "10px",
     marginTop: "20px",
+    cursor: "pointer",
+  },
+  logo: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "end",
   }
 });
 
@@ -88,7 +98,7 @@ const Footer = () => {
                 Mobile App
               </Typography>
             </Grid>
-            <Grid item item md={4} sm={6} xs={12}>
+            <Grid item md={4} sm={6} xs={12}>
               <Typography variant="body1" className={classes.mainHeading}>
                 About
               </Typography>
@@ -107,7 +117,7 @@ const Footer = () => {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item sm={6} textAlign={"right"} className="">
+        <Grid item sm={6} textAlign={"right"} className={classes.logo}>
           <img src={flag} alt="footer_logo" className={classes.flag} />
           <Typography variant="body1" className={classes.email}>Team@smarqo.com</Typography>
           <Typography variant="h1" className={classes.number}>+91 84568 65923</Typography>
@@ -115,8 +125,9 @@ const Footer = () => {
             (MON-FRI, 7 AM -9 PM)
           </Typography>
           <div className={classes.icons}>
-            <TwitterIcon />
-            <FacebookOutlinedIcon />
+            <a href className="hover:text-sky-700" ><TwitterIcon /></a>
+            <a href className="hover:text-sky-700" ><FacebookOutlinedIcon /></a>
+            <a href className="hover:text-sky-700" ><LinkedInIcon /></a>
           </div>
         </Grid>
       </Grid>
