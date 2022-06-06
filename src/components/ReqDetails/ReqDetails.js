@@ -45,10 +45,7 @@ const ReqDetails = () => {
                     <p className="text-[#1D43A2] mb-[54px] text-[16px]">Allow professionals to contact me back ( Your contact number is
                         shared )</p>
                     <p className="text-center my-[43px] text-[13px] text-[#212121] italic font-thin flex justify-end">Post requirement  ID: 32533382</p>
-                    {/* <Button
-                    btn_text="Yes Post My Request"
-                    style={{ fontSize: "1rem", margin: "0px auto" }}
-                /> */}
+                   
                 </div>
 
             </div>
