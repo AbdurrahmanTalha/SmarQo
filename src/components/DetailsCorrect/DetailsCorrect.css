@@ -4,9 +4,24 @@
     padding-left: 53px;
     padding-bottom: 47px;
     border-radius: 10px;
-    box-shadow: 0px 3px 10px rgba(99, 97, 97, 0.24);
+    box-shadow: 0px 3px 10px #6361613d;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+
+@media (min-width: 600px) {
+    .card-detail {
+    background-color: #F5F5F5;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
 }

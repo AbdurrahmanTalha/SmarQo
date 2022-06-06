@@ -14,7 +14,7 @@ const ReqDetails = () => {
     return (
         <div>
             <div className=''>
-                <Box sx={{ width: '100%', bgcolor: '#1D1D1D' }} className="text-white pt-4">
+                <Box sx={{ width: '100%', bgcolor: '#1D1D1D' }} className="text-white pt-[53px] mb-[38px]">
                     <p className="text-center text-[21px] text-[#707070] font-extralight">House Plans for a 2400 sqft land in Whitefield Banglore</p>
                     <Tabs
                         TabIndicatorProps={{
