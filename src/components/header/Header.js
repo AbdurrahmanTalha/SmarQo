@@ -18,7 +18,7 @@ const Header = () => {
           <div className="logo mr-[-45px] ml-[-45px] lg:md:ml-0">
             <img src={logo} alt="logo" />
           </div>
-          <Link to="/smarqo" className="company_name hidden lg:md:block">
+          <Link to="/" className="company_name hidden lg:md:block">
             SmarQo
           </Link>
           {/* <div className="explore">
@@ -49,18 +49,18 @@ const Header = () => {
               </div>
             ) : (
               <div className="login_signup_btns">
-                <Link to="/smarqo/login" className="login_btn btn hidden lg:md:block">
+                <Link to="/login" className="login_btn btn hidden lg:md:block">
                   Login
                 </Link>
-                <Link to="/smarqo/signup" className="signup_btn btn hidden lg:md:block">
+                <Link to="/signup" className="signup_btn btn hidden lg:md:block">
                   sign up
                 </Link>
                 {/* mobile buttons */}
                 <div className="block lg:md:hidden mt-[24px] lg:md:mt-[0px]">
-                  <Link to="/smarqo/login" className="bg-[#373737] text-white px-4 py-2  rounded text-[13px]">
+                  <Link to="/login" className="bg-[#373737] text-white px-4 py-2  rounded text-[13px]">
                     LOGIN
                   </Link>
-                  <Link to="/smarqo/signup" className="text-[#373737] px-4 py-2 text-[13px]">
+                  <Link to="/signup" className="text-[#373737] px-4 py-2 text-[13px]">
                     REGISTER
                   </Link>
                 </div>
@@ -68,10 +68,10 @@ const Header = () => {
               </div>
             )}
             <div className="req-btn">
-            <Button            
-              btn_text="post requirement"
-              btn_link="/smarqo/postRequirementNow"
-            />
+              <Button
+                btn_text="post requirement"
+                btn_link="/postRequirementNow"
+              />
             </div>
           </div>
         </div>

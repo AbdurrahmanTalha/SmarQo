@@ -1,10 +1,10 @@
 const paths = {
-  home: "/smarqo",
-  login: "/smarqo/login",
-  signup: "/smarqo/signup",
-  postRequirementNow: "/smarqo/postRequirementNow",
-  detailsCorrect: "/smarqo/detailsCorrect",
-  reqDetails: "/smarqo/reqDetails",
+  home: "/",
+  login: "/login",
+  signup: "/signup",
+  postRequirementNow: "/postRequirementNow",
+  detailsCorrect: "/detailsCorrect",
+  reqDetails: "/reqDetails",
 };
 
 module.exports = paths;

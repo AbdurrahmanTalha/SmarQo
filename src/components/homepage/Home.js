@@ -22,7 +22,7 @@ const Home = () => {
             </div>
             <Button
               btn_text="post requirement now"
-              btn_link="/smarqo/postRequirementNow"
+              btn_link="/postRequirementNow"
               style={{ fontSize: "1rem" }}
             />
           </div>
