@@ -4,8 +4,9 @@ import DetailsCorrect from "../DetailsCorrect/DetailsCorrect";
 import Home from "../homepage/Home";
 import Login from "../login/Login";
 import PostRequirement from "../postRequirements/PostRequirement";
-import ReqDetails from "../ReqDetails/ReqDetails";
+import DetailsTabs from "../ReqDetails/DetailsTabs";
 import Register from "../register/Register";
+import DetailsListTabs from "../DetailsList/DetailsListTabs"
 import paths from "./routerPath";
 
 const RoutesPath = () => {
@@ -20,7 +21,8 @@ const RoutesPath = () => {
       <Route exact path={paths.login} element={<Login />} />
       <Route exact path={paths.signup} element={<Register />} />
       <Route exact path={paths.detailsCorrect} element={<DetailsCorrect></DetailsCorrect>}></Route>
-      <Route exact path={paths.reqDetails} element={<ReqDetails></ReqDetails>}></Route>
+      <Route exact path={paths.reqDetails} element={<DetailsTabs></DetailsTabs>}></Route>
+      <Route exact path={paths.detailsList} element={<DetailsListTabs></DetailsListTabs>}></Route>
     </Routes>
   );
 };
