@@ -8,6 +8,7 @@ import DetailsTabs from "../ReqDetails/DetailsTabs";
 import Register from "../register/Register";
 import DetailsListTabs from "../DetailsList/DetailsListTabs"
 import paths from "./routerPath";
+import Connected from "../DetailsList/Connected";
 
 const RoutesPath = () => {
   return (
@@ -23,6 +24,7 @@ const RoutesPath = () => {
       <Route exact path={paths.detailsCorrect} element={<DetailsCorrect></DetailsCorrect>}></Route>
       <Route exact path={paths.reqDetails} element={<DetailsTabs></DetailsTabs>}></Route>
       <Route exact path={paths.detailsList} element={<DetailsListTabs></DetailsListTabs>}></Route>
+      {/* <Route exact path={paths.connect} element={<Connected></Connected>}></Route> */}
     </Routes>
   );
 };
