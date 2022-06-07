@@ -8,12 +8,12 @@ import Button from '../helper/buttons/Button';
 const Connected = () => {
     return (
         <div className="main_container_wrapper pb-[349px]">
-            <div className="lg:md:pt-[43px] lg:md:pb-[53px] rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md  lg:md:bg-[#FFFFFF]  lg:md:w-[1300px] w-auto mt-[40px]">
-                <div className="flex pl-[91px] justify-between">
+            <div className="lg:md:pt-[43px] lg:md:pb-[53px] rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md  lg:md:bg-[#FFFFFF]  lg:md:w-auto w-auto mt-[40px]">
+                <div className="lg:md:flex lg:md:pl-[91px] pl-0 ml-[43px] justify-between">
                     <div className="flex">
-                        <img src={ChairGuy} alt="" />
+                        <img src={ChairGuy} alt="" className="w-[129px] lg:md:w-auto lg:md:h-auto h-[141px] " />
                         <div className="ml-[29px]">
-                            <h2 className="text-[30px] font-medium ">Full Name</h2>
+                            <h2 className="lg:md:text-[30px] text-[24px] font-medium ">Full Name</h2>
                             <div className="flex mb-[24px]">
                                 <img src={Flag} className="mr-[15px] w-[40px]" alt="" />
                                 <p className="text-[14px] font-medium italic">Current city</p>
@@ -32,8 +32,8 @@ const Connected = () => {
                     </div>
                     <div className="mr-[124px] text-[#1D1D1D] flex flex-col items-center">
                         <h2 className="text-[22px] font-bold">INR 3500</h2>
-                        <p className="text-center text-[18px] font-light">In 1 Day</p>
-                        <div className="mt-[81px]">
+                        <p className="text-center text-[18px] font-light lg:md:block hidden">In 1 Day</p>
+                        <div className="mt-[81px] lg:md:block hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="244" height="61" viewBox="0 0 244 61">
                                 <defs>
                                     <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 475 120">
@@ -47,9 +47,12 @@ const Connected = () => {
                     </div>
                 </div>
                 <Divider variant="middle" className="mt-[42.5px] mx-[57px] mb-[50px]" />
-                <div className="flex justify-between pr-[73px]">
-                    <p className="text-[18px] font-light ml-[91px]">You can connect & Chat with “Full name” here </p>
-                    <Button btn_text="Message"></Button>
+                <div className="flex lg:md:justify-between lg:md:flex-row flex-col  lg:md:pr-[73px]">
+                    <p className="text-[18px] sm:text-center font-light lg:md:ml-[91px]">You can connect & Chat with “Full name” here </p>
+                    {/* className="sm:mx-auto" */}
+                    <div className="mx-auto lg:md:mx-0">
+                        <Button btn_text="Message" ></Button>
+                    </div>
                 </div>
                 <Divider variant="middle" className="mt-[51.5px] mx-[57px] mb-[42.5px]" />
                 <div className="ml-[91px]">
