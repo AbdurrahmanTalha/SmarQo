@@ -13,11 +13,11 @@ const ReqDetails = () => {
         setSelectedTab(newValue);
     };
     return (
-        <div className="main_container_background ">
-            <Box sx={{ width: '100%', bgcolor: '#1D1D1D' }} className="text-white pb-[1px] border-[5px] pt-[53px] ">
+        <div className="border-0 m-0 p-0 ">
+            <Box sx={{ width: '100%', bgcolor: '#1D1D1D' }} className="text-white border-0 pb-[1px] pt-[53px] ">
                 <p className="text-center mb-[28px] lg:md:text-[21px] text-[13px] text-[#ffffff] font-extralight">House Plans for a 2400 sqft land in Whitefield Banglore</p>
                 <Tabs
-                    TabIndicatorProps={{ style: { backgroundColor: "#FFFFFF", } }}
+                    TabIndicatorProps={{ style: { backgroundColor: "#FFFFFF", border: "2px solid #FFFFFF" } }}
                     value={selectedTab}
                     onChange={handleSelectedTab}
                     centered
