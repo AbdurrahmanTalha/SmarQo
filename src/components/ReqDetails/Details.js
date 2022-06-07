@@ -4,22 +4,8 @@ import { FaPen } from 'react-icons/fa';
 
 const Details = () => {
     return (
-        <div className="main_container_wrapper ">
+        <div className="main_container_wrapper  mb-[349px]">
             <div className="lg:md:pt-[47px] mx-auto lg:md:pb-[53px] lg:md:pl-[53px] rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md  lg:md:bg-[#FFFFFF]  lg:md:w-[738px] w-auto mt-[40px] lg:md:mx-auto">
-                {/* <div className="flex lg:md:justify-between">
-                    <div style={{ marginBottom: "37px" }} className="text-[42px] sm:flex justify-end self-end  lg:text-[58px] font-medium">Requirement
-                        Details</div>
-                    <div className="text-center lg:md:flex lg:md:flex-col lg:md:justify-center lg:md:mr-[55px]">
-                        <div className="bg-[#0C0C0C] text-[#ffffff] text-center p-4 flex justify-center items-center lg:md:text-3xl text-[1.5rem] rounded-[50%] lg:md:mt-0 mt-[60px] ">
-                            <FaPen></FaPen>
-                        </div>
-                        <div className="lg:md:block hidden">
-                            <p className="font-bold text-xs">Posted Date: </p>
-                            <p className="text-xs font-light italic">Jan 3rd 2022<br></br>
-                                ( 6:25pm)</p>
-                        </div>
-                    </div>
-                </div> */}
                 <div className="flex lg:md:justify-between">
                     <div style={{ marginBottom: "37px" }} className="text-[42px] sm:flex justify-end self-end  lg:text-[58px] font-medium">Requirement
                         Details?</div>
