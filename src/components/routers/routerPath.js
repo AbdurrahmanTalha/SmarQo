@@ -5,6 +5,7 @@ const paths = {
   postRequirementNow: "/postRequirementNow",
   detailsCorrect: "/detailsCorrect",
   reqDetails: "/reqDetails",
+  detailsList: "/detailsList",
 };
 
 module.exports = paths;

@@ -2,9 +2,9 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import './ReqDetails.css';
-import Details from './Details';
-import SmartQuotes from './SmartQuotes';
+import './DetailsListTabs.css';
+import DetailsList from './DetailsList';
+import Connected from './Connected';
 
 const ReqDetails = () => {
     const [selectedTab, setSelectedTab] = React.useState(0);
@@ -22,12 +22,12 @@ const ReqDetails = () => {
                     onChange={handleSelectedTab}
                     centered
                 >
-                    <Tab label={<span className="text-[#ffffff]">Details</span>} />
-                    <Tab label={<span className="text-[#ffffff]">Smart quotes</span>} />
+                    <Tab label={<span className="text-[#ffffff]">Details List</span>} />
+                    <Tab label={<span className="text-[#ffffff]">Connected</span>} />
                 </Tabs>
             </Box>
-            {selectedTab === 0 && <Details />}
-            {selectedTab === 1 && <SmartQuotes />}
+            {selectedTab === 0 && <DetailsList />}
+            {selectedTab === 1 && <Connected />}
         </div>
     );
 };
