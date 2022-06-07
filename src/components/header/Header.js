@@ -12,27 +12,24 @@ import EmailIcon from "@mui/icons-material/Email";
 const Header = () => {
   const [islogin, setislogin] = useState(false);
   return (
-    <div className="header_container">
+    <div className="header_container pb-5">
       <div className="header">
         <div className="left_header">
           <div className="logo mr-[-45px] ml-[-45px] lg:md:ml-0">
             <img src={logo} alt="logo" />
           </div>
-          <Link to="/" className="company_name hidden lg:md:block">
+          <Link to="/" className="company_name text-3xl mr-[85px]  hidden lg:md:block">
             SmarQo
           </Link>
-          {/* <div className="explore">
-                        Explore <ArrowDropDownIcon />
-                    </div> */}
           <Select
             options={["option1", "option2", "optiom3"]}
             placeholder="Explore"
-            className="explore"
+            className="explore mt-[15px]"
             id="companyExplore"
           />
         </div>
         <div className="right_header">
-          <div className="right_header_section1">Join as a Professional</div>
+          <div className="right_header_section1 text-[1rem]">Join as a Professional</div>
           <div
             className="right_header_section2"
             style={islogin ? { gap: "10px" } : {}}
@@ -49,10 +46,10 @@ const Header = () => {
               </div>
             ) : (
               <div className="login_signup_btns">
-                <Link to="/login" className="login_btn btn hidden lg:md:block">
+                <Link to="/login" className="login_btn text-[16px] btn hidden lg:md:block">
                   Login
                 </Link>
-                <Link to="/signup" className="signup_btn btn hidden lg:md:block">
+                <Link to="/signup" className="signup_btn text-[16px] btn hidden lg:md:block">
                   sign up
                 </Link>
                 {/* mobile buttons */}
@@ -64,7 +61,6 @@ const Header = () => {
                     REGISTER
                   </Link>
                 </div>
-
               </div>
             )}
             <div className="req-btn">

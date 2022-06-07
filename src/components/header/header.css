@@ -38,7 +38,7 @@
 }
 
 .header_container .header .left_header .company_name {
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
   font-weight: 700;
   color: #202020;
   font-family: "DM Sans", sans-serif;
@@ -102,7 +102,7 @@
   .right_header_section2
   .login_signup_btns
   .btn {
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: var(--header-text-color3);
   text-transform: uppercase;
   cursor: pointer;
@@ -124,22 +124,7 @@
   #companyExplore {
     display: none;
   }
-  .req-btn{
+  .req-btn {
     display: none;
   }
 }
-
-
-/* .header_container
-  .header
-  .right_header
-  .right_header_section2
-  .post_requirement_btn {
-  font-size: 0.8rem;
-  color: var(--white);
-  background-color: var(--btn-bgcolor);
-  cursor: pointer;
-  padding: 8px 35px;
-  border-radius: 5px;
-  text-transform: capitalize;
-} */

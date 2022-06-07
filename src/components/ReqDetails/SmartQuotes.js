@@ -1,5 +1,5 @@
 import React from 'react';
-import Clock from "../../asserts/noun_hour_2630774.png";
+import { BsFillClockFill } from 'react-icons/bs';
 
 const SmartQuotes = () => {
     return (
@@ -8,7 +8,9 @@ const SmartQuotes = () => {
                 <div style={{ marginBottom: "37px" }} className="text-[42px] lg:text-[58px] font-medium"><h2 className='w-full lg:md:text-left text-center'>Your requirement is
                      posted and being reviewed. </h2> </div>
                 <div className="my-12 flex justify-center items-center">
-                    <img src={Clock} alt="clock" />
+                    <div className="text-[#707070] text-9xl text-center">
+                        <BsFillClockFill></BsFillClockFill>
+                    </div>
                 </div>
 
                 <h2 className="lg:md:text-[18px] text-[14px] mb-[13px] lg:md:text-left text-center">Please be patient and wait for smart quotes from professionals.
