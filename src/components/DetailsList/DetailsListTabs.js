@@ -6,7 +6,7 @@ import './DetailsListTabs.css';
 import DetailsList from './DetailsList';
 import Connected from './Connected';
 
-const ReqDetails = () => {
+const DetailsListTabs = () => {
     const [selectedTab, setSelectedTab] = React.useState(0);
 
     const handleSelectedTab = (event, newValue) => {
@@ -15,7 +15,8 @@ const ReqDetails = () => {
     return (
         <div className="border-0 m-0 p-0 ">
             <Box sx={{ width: '100%', bgcolor: '#1D1D1D' }} className="text-white border-0 pb-[1px] pt-[53px] ">
-                <p className="text-center mb-[28px] lg:md:text-[21px] text-[13px] text-[#ffffff] font-extralight">House Plans for a 2400 sqft land in Whitefield Banglore</p>
+                <p className="text-center mb-[32px] lg:md:text-[21px] text-[13px] text-[#ffffff] font-extralight">House Plans for a 2400 sqft land in Whitefield Banglore</p>
+                <p className="lg:md:text-[36px] mb-[30px] text-center font-bold">Congratulations on connecting with “Full Name”</p>
                 <Tabs
                     TabIndicatorProps={{ style: { backgroundColor: "#FFFFFF", border: "2px solid #FFFFFF" } }}
                     value={selectedTab}
@@ -23,7 +24,7 @@ const ReqDetails = () => {
                     centered
                 >
                     <Tab label={<span className="text-[#ffffff]">Details List</span>} />
-                    <Tab label={<span className="text-[#ffffff]">Connected</span>} />
+                    <Tab label={<span className="text-[#ffffff]">Smart quotes</span>} />
                 </Tabs>
             </Box>
             {selectedTab === 0 && <DetailsList />}
@@ -32,4 +33,4 @@ const ReqDetails = () => {
     );
 };
 
-export default ReqDetails;
+export default DetailsListTabs;
