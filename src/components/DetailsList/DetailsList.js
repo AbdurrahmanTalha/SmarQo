@@ -4,6 +4,7 @@ import Checkbox from '@mui/material/Checkbox';
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
 
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
@@ -31,20 +32,64 @@ const DetailsList = () => {
                                 sx={{ '& .MuiSvgIcon-root': { fontSize: 50 } }}
                             />
                         </div>
-                        <h2 className="mt-[34px] text-xl text-[#1D1D1D]">Price Range <span className='text-[13px]'>(per hour)</span></h2>
+                        <div>
+                            <h2 className="mt-[34px] text-xl text-[#1D1D1D]">Price Range <span className='text-[13px]'>(per hour)</span></h2>
 
-                        <div className="flex justify-start items-center pl-[14px] mt-[42px] mb-[28px]">
-                            <Box width={400}>
-                                <Slider aria-label="Default" valueLabelDisplay="auto" />
-                            </Box>
-                        </div>
+                            <div className="flex justify-start items-center pl-[14px] mt-[42px] mb-[28px]">
+                                <Box width={400}>
+                                    <Slider aria-label="Default" valueLabelDisplay="auto" />
+                                </Box>
+                            </div>
 
-                        <div className="flex justify-between">
-                        <Button variant="outlined" className="text-[#707070] 
+                            <div className="flex justify-between mb-[28px]">
+                                <Button variant="outlined" className="text-[#707070] 
                         border-[#707070]">High</Button>
-                        <Button variant="outlined" className="text-[#707070] 
+                                <Button variant="outlined" className="text-[#707070] 
                         border-[#707070] mr-[45px]">Low</Button>
+                            </div>
                         </div>
+
+                        <div>
+                            <h2 className="mt-[34px] text-xl text-[#1D1D1D]">Experience<span className='text-[13px]'>(years)</span></h2>
+
+                            <div className="flex justify-start items-center pl-[14px] mt-[42px] mb-[28px]">
+                                <Box width={400}>
+                                    <Slider aria-label="Default" valueLabelDisplay="auto" />
+                                </Box>
+                            </div>
+
+                            <div className="flex justify-between mb-[28px]">
+                                <Button variant="outlined" className="text-[#707070] 
+                        border-[#707070]">High</Button>
+                                <Button variant="outlined" className="text-[#707070] 
+                        border-[#707070] mr-[45px]">Low</Button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 className="mt-[34px] mb-[21px] text-xl text-[#1D1D1D]">Location</h2>
+                            <div className="flex items-center">
+                                <Box sx={{
+                                    width: 415,
+                                    maxWidth: '100%',
+                                }}>
+                                    <TextField fullWidth id="fullWidth" />
+                                </Box>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 className="mt-[34px] mb-[21px] text-xl text-[#1D1D1D]">Specialization</h2>
+                            <div className="flex items-center">
+                                <Box sx={{
+                                    width: 415,
+                                    maxWidth: '100%',
+                                }}>
+                                    <TextField fullWidth id="fullWidth" />
+                                </Box>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
