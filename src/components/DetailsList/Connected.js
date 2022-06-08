@@ -7,8 +7,8 @@ import Button from '../helper/buttons/Button';
 
 const Connected = () => {
     return (
-        <div className="main_container_wrapper pb-[349px]">
-            <div className="lg:md:pt-[43px] lg:md:pb-[53px] rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md  lg:md:bg-[#FFFFFF]  lg:md:w-auto w-auto mt-[40px]">
+        <div className="main_container_wrapper pb-[349px] flex justify-center items-center">
+            <div className="lg:md:pt-[43px] lg:md:pb-[53px] rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md  lg:md:bg-[#FFFFFF]  lg:md:w-[1602px] w-auto mt-[40px]">
                 <div className="lg:md:flex lg:md:pl-[91px] pl-0 ml-[43px] justify-between">
                     <div className="flex">
                         <img src={ChairGuy} alt="" className="w-[166px] lg:md:w-auto lg:md:h-auto h-[166px] " />
