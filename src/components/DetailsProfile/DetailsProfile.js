@@ -33,14 +33,14 @@ const DetailsProfile = () => {
                             <p className="text-[#707070] text-[14px] font-medium lg:md:mt-[20px]">Liked & apricated by users</p>
                         </div>
                     </div>
-                    {/* <div className="mr-[124px] text-[#1D1D1D] flex flex-col items-center"> */}
-                    {/* <h2 className="text-[22px] font-bold">INR 3500</h2>
+                    <div className="mr-[124px] text-[#1D1D1D] flex flex-col items-center"> 
+                        <h2 className="text-[22px] font-bold">INR 3500</h2>
                         <h2 className='text-[50px] p-2 py-[61px]'><IoShieldCheckmark /></h2>
                         <Button
                             btn_text="Connect"
                             btn_link="/postRequirementNow"
-                        /> */}
-                    {/* </div> */}
+                        />
+                    </div> *
                 </div>
                 <div className="flex justify-between pr-[73px]">
                     <p className="text-[16px] font-light ml-[91px] mt-[65px]">Dear Client,  I am willing to provide you a best plan for your<br /> house a best plan for  your house a best plan for  your house
