@@ -127,4 +127,7 @@
   .req-btn {
     display: none;
   }
+  .header_container .header{
+    height: 74px;
+}
 }

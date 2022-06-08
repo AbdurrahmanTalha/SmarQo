@@ -1,0 +1,17 @@
+.triangle {
+    position: absolute;
+    width: 12.5px;
+    height: 20px;
+    right: 60.5px;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+    background-color: #484848;
+  }
+  .b-triangle {
+        width: 12.5px;
+        height: 14px;
+        right: 60.5px;
+        -webkit-clip-path: polygon(100% 100%, 100% 0%, 0% 50%);
+        clip-path: polygon(100% 100%, 100% 0%, 0% 50%);
+        background-color: #484848;
+  }
