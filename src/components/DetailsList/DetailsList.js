@@ -12,8 +12,7 @@ import { Divider } from '@mui/material';
 import Pagination from '@mui/material/Pagination';
 import PaginationItem from '@mui/material/PaginationItem';
 import Stack from '@mui/material/Stack';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import "./DetailsListTabs.css"
 
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
@@ -31,7 +30,7 @@ const DetailsList = () => {
             textTransform: "capitalize",
         },
     });
-    
+
 
     const classes = useStyle();
 
@@ -288,7 +287,7 @@ const DetailsList = () => {
                             size="medium"
                             renderItem={(item) => (
                                 <PaginationItem
-                                    backgroundColor="#0C0C0C"
+                                    
                                     {...item}
                                 />
                             )}

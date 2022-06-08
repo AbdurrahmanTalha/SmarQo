@@ -12,8 +12,8 @@ const DetailsProfile = () => {
         <div className="border-0 m-0 p-0 ">
             <Box sx={{ width: '100%', bgcolor: '#1D1D1D' }} className="text-white border-0 h-[523px] ">
                 <div className="flex items-center ml-[17px] pt-[30px]">
-                <button className="b-triangle lg:md:hidden block"></button>
-                <button className="lg:md:hidden block text-[#707070] text-[15px] flex items-center pl-[5px]">Back</button>                
+                    <button className="b-triangle lg:md:hidden block"></button>
+                    <button className="lg:md:hidden block text-[#707070] text-[15px] flex items-center pl-[5px]">Back</button>
                 </div>
             </Box>
             <div className="pt-[47px] pb-[53px] lg:md:pl-[53px] rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md bg-[#FFFFFF] lg:md:mx-[73px]  mt-[-443px]">
@@ -41,10 +41,10 @@ const DetailsProfile = () => {
                         </div>
                     </div>
 
-<div className="lg:md:mt-[-35px] lg:md:mr-[-725px] mt-0 mr-0">
-                            <button className="bg-[#1B3548] text-[#ffff] lg:md:text-[16px] text-[10px] lg:md:pl-[36px] lg:md:pr-[47px] pl-[23px] pr-[33px] py-[8px] ">SmarQo Choice</button>
-                            <div className="triangle lg:md:block hidden"></div>
-                        </div>
+                    <div className="lg:md:mt-[-35px] lg:md:mr-[-725px] mt-0 mr-0">
+                        <button className="bg-[#1B3548] text-[#ffff] lg:md:text-[16px] text-[10px] lg:md:pl-[36px] lg:md:pr-[47px] pl-[23px] pr-[33px] py-[8px] ">SmarQo Choice</button>
+                        <div className="triangle lg:md:block hidden"></div>
+                    </div>
                     <div className="lg:md:block hidden mt-[17px]">
                         <div className="mr-[124px] text-[#1D1D1D] flex flex-col items-center">
                             <h2 className="text-[22px] font-bold">INR 3500</h2>
@@ -59,15 +59,15 @@ const DetailsProfile = () => {
                     mx-[38px]">
                         <h2 className="text-[22px] font-bold">INR 3500</h2>
 
-                    <div className="mr-[124px] text-[#1D1D1D] flex flex-col items-center"> 
-                        <h2 className="text-[22px] font-bold">INR 3500</h2>
-                        <h2 className='text-[50px] p-2 py-[61px]'><IoShieldCheckmark /></h2>
+                        <div className="mr-[124px] text-[#1D1D1D] flex flex-col items-center">
+                            <h2 className="text-[22px] font-bold">INR 3500</h2>
+                            <h2 className='text-[50px] p-2 py-[61px]'><IoShieldCheckmark /></h2>
 
-                        <Button
-                            btn_text="Connect"
-                            btn_link="/postRequirementNow"
-                        />
-                    </div>
+                            <Button
+                                btn_text="Connect"
+                                btn_link="/postRequirementNow"
+                            />
+                        </div>
                     </div> *
                 </div>
                 <Divider variant="middle" className="mt-[51.5px] mx-[57px] lg:md:mb-[42.5px]mb-0" />
