@@ -51,6 +51,12 @@ const DetailsProfile = () => {
                             <p className="text-[#707070] text-[11px] font-medium lg:md:mt-[20px]">Liked & apricated by users</p>
                         </div>
                     </div>
+
+                    <div className="lg:md:mt-[-35px] lg:md:mr-[-725px] mt-0 mr-0">
+                        <button className="bg-[#1B3548] text-[#ffff] lg:md:text-[16px] text-[10px] lg:md:pl-[36px] lg:md:pr-[47px] pl-[23px] pr-[33px] py-[8px] ">SmarQo Choice</button>
+                        <div className="triangle lg:md:block hidden"></div>
+                    </div>
+
                     <div className="lg:md:block hidden mt-[17px]">
                         <div className="mr-[124px] text-[#1D1D1D] flex flex-col items-center">
                             <h2 className="text-[22px] font-bold">INR 3500</h2>
