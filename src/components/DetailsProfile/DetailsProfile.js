@@ -12,14 +12,25 @@ const DetailsProfile = () => {
         <div className="border-0 m-0 p-0 ">
             <Box sx={{ width: '100%', bgcolor: '#1D1D1D' }} className="text-white border-0 h-[523px] ">
                 <div className="flex items-center ml-[17px] pt-[30px]">
-                <button className="b-triangle lg:md:hidden block"></button>
-                <button className="lg:md:hidden block text-[#707070] text-[15px] flex items-center pl-[5px]">Back</button>                
+                    <button className="b-triangle lg:md:hidden block"></button>
+                    <button className="lg:md:hidden block text-[#707070] text-[15px] flex items-center pl-[5px]">Back</button>
                 </div>
             </Box>
-            <div className="pt-[47px] pb-[53px] lg:md:pl-[53px] rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md bg-[#FFFFFF] lg:md:mx-[73px]  mt-[-443px]">
+            <div className="pt-[47px] pb-[53px] lg:md:w-[1400px] rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md bg-[#FFFFFF] lg:md:mx-auto  
+            mt-[-443px]">
+                <div className=" hidden lg:md:block">
+                    <div className="lg:md:mt-[-35px] flex justify-end mr-[-15px]">
+                        <div className='flex items-end'>
+                            <div className='flex items-end'>
+                                <button className="bg-[#1B3548] text-[#ffff] lg:md:text-[16px] text-[10px] lg:md:pl-[36px] lg:md:pr-[47px] pl-[23px] pr-[33px] py-[8px] ">SmarQo Choice</button>
+                                <div className="triangle lg:md:block hidden"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="lg:md:flex lg:md:pl-[91px] pl-0 justify-between ">
                     <div className="flex lg:md:px-0 px-[43px] ">
-                        <img src={ChairGuy} alt="" className="lg:md:w-auto w-[129px] lg:md:h-auto h-[141px]" />
+                        <img src={ChairGuy} alt="" className="lg:md:w-auto w-[129px] lg:md:h-[218px] h-[141px]" />
                         <div className="lg:md:ml-[29px] ml-[43px] w-full">
                             <div className='flex justify-between items-center'>
                                 <h2 className="lg:md:text-[30px] text-[24px] font-medium">Full Name</h2>
@@ -40,18 +51,24 @@ const DetailsProfile = () => {
                             <p className="text-[#707070] text-[11px] font-medium lg:md:mt-[20px]">Liked & apricated by users</p>
                         </div>
                     </div>
-                        <div className="lg:md:mt-[-35px] lg:md:mr-[-725px] mt-0 mr-0">
-                            <button className="bg-[#1B3548] text-[#ffff] lg:md:text-[16px] text-[10px] lg:md:pl-[36px] lg:md:pr-[47px] pl-[23px] pr-[33px] py-[8px] ">SmarQo Choice</button>
-                            <div className="triangle lg:md:block hidden"></div>
-                        </div>
                     <div className="lg:md:block hidden mt-[17px]">
                         <div className="mr-[124px] text-[#1D1D1D] flex flex-col items-center">
                             <h2 className="text-[22px] font-bold">INR 3500</h2>
-                            <h2 className='lg:md:text-[50px] text-[35px] p-2 py-[61px] lg:md:mt-0'><IoShieldCheckmark /></h2>
+                            <h2 className='lg:md:text-[50px] text-[35px] p-2 
+                            pb-[80px] pt-[70px] lg:md:mt-0'><IoShieldCheckmark /></h2>
                             <Button
                                 btn_text="Connect"
                                 btn_link="/postRequirementNow"
                             />
+                            
+
+                        </div>
+
+                    </div>
+                    <div className='flex items-end lg:md:hidden block'>
+                        <div className='flex items-end'>
+                            <button className="bg-[#1B3548] text-[#ffff] lg:md:text-[16px] text-[10px] lg:md:pl-[36px] lg:md:pr-[47px] pl-[23px] pr-[33px] py-[8px] ">SmarQo Choice</button>
+                            <div className="triangle lg:md:block hidden"></div>
                         </div>
                     </div>
                     <div className="mt-[24px] lg:md:hidden block flex justify-between items-center 
@@ -63,8 +80,13 @@ const DetailsProfile = () => {
                         />
                     </div>
                 </div>
-                <Divider variant="middle" className="mt-[51.5px] mx-[57px] lg:md:mb-[42.5px]mb-0" />
-                <div className="flex justify-between pr-[73px]">
+                <div className="flex justify-between pr-[73px] hidden lg:md:block mt-[-98px]
+                pb-[45px]">
+                    <p className="text-[16px] font-light lg:md:ml-[91px] ml-[42.5px] lg:md:mt-[65px] mt-[48.5px]">Dear Client,  I am willing to provide you a best plan for your<br /> house a best plan for  your house a best plan for  your house
+                        a best plan for  your house a best plan for  your house</p>
+                </div>
+                <Divider variant="middle" className="mt-[51.5px] mx-[57px] lg:md:mb-[42.5px]mb-0 block lg:md:hidden" />
+                <div className="flex justify-between pr-[73px] block lg:md:hidden">
                     <p className="text-[16px] font-light lg:md:ml-[91px] ml-[42.5px] lg:md:mt-[65px] mt-[48.5px]">Dear Client,  I am willing to provide you a best plan for your<br /> house a best plan for  your house a best plan for  your house
                         a best plan for  your house a best plan for  your house</p>
                 </div>
