@@ -6,6 +6,7 @@ const paths = {
   detailsCorrect: "/detailsCorrect",
   reqDetails: "/reqDetails",
   detailsList: "/detailsList",
+  detailsProfile: "/detailsProfile",
 };
 
 module.exports = paths;
