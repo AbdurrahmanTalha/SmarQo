@@ -11,12 +11,12 @@ const Connected = () => {
             <div className="lg:md:pt-[43px] lg:md:pb-[53px] rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md  lg:md:bg-[#FFFFFF]  lg:md:w-auto w-auto mt-[40px]">
                 <div className="lg:md:flex lg:md:pl-[91px] pl-0 ml-[43px] justify-between">
                     <div className="flex">
-                        <img src={ChairGuy} alt="" className="w-[129px] lg:md:w-auto lg:md:h-auto h-[141px] " />
+                        <img src={ChairGuy} alt="" className="w-[166px] lg:md:w-auto lg:md:h-auto h-[166px] " />
                         <div className="ml-[29px]">
-                            <h2 className="lg:md:text-[30px] text-[24px] font-medium ">Full Name</h2>
-                            <div className="flex mb-[24px]">
+                            <h2 className="lg:md:text-[30px] text-[24px] font-medium">Full Name</h2>
+                            <div className="flex lg:md:mb-[24px] lg:md:mt-[0] mt-[30px]">
                                 <img src={Flag} className="mr-[15px] w-[40px]" alt="" />
-                                <p className="text-[14px] font-medium italic">Current city</p>
+                                <p className="lg:md:text-[14px] text-[11px]  font-medium italic">Current city</p>
                             </div>
                             <p className="text-[18px] font-medium">12 Years of experience</p>
                             <div className="flex items-center">
@@ -26,11 +26,11 @@ const Connected = () => {
 
                                 <p className="ml-[13px] text-[23px] align-middle font-medium text-[#707070]">993</p>
                             </div>
-                            <p className="text-[#707070] text-[14px] font-medium mt-[20px]">Liked & apricated by users</p>
+                            <p className="text-[#707070] text-[14px] font-medium lg:md:mt-[20px]">Liked & apricated by users</p>
                         </div>
 
                     </div>
-                    <div className="mr-[124px] text-[#1D1D1D] flex flex-col items-center">
+                    <div className="mr-[124px] text-[#1D1D1D] flex flex-col lg:md:items-center">
                         <h2 className="text-[22px] font-bold">INR 3500</h2>
                         <p className="text-center text-[18px] font-light lg:md:block hidden">In 1 Day</p>
                         <div className="mt-[81px] lg:md:block hidden">
@@ -48,7 +48,7 @@ const Connected = () => {
                 </div>
                 <Divider variant="middle" className="mt-[42.5px] mx-[57px] mb-[50px]" />
                 <div className="flex lg:md:justify-between lg:md:flex-row flex-col  lg:md:pr-[73px]">
-                    <p className="text-[18px] sm:text-center font-light lg:md:ml-[91px]">You can connect & Chat with “Full name” here </p>
+                    <p className="text-[18px] lg:md:text-left text-center font-light lg:md:ml-[91px]">You can connect & Chat with “Full name” here </p>
                     {/* className="sm:mx-auto" */}
                     <div className="mx-auto lg:md:mx-0">
                         <Button btn_text="Message" ></Button>
