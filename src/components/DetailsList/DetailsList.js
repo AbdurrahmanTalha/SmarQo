@@ -47,10 +47,10 @@ const DetailsList = () => {
 
     return (
         <div className="main_container_wrapper py-0 lg:md:py-[3rem] lg:md:px-[3rem] px-[0]">
-            <div className="lg:md:mx-auto  pb-[50px] rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md  lg:md:bg-[#FFFFFF] ">
+            <div className="lg:md:mx-auto lg:w-[1602px] pb-[50px] rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md  lg:md:bg-[#FFFFFF] ">
 
                 <div className="lg:md:flex block ">
-                    <div className='lg:md:pt-[47px] lg:md:pl-[53px] lg:md:pb-[53px] '>
+                    <div className='lg:md:pt-[31px] lg:md:pl-[53px] lg:md:pb-[53px] '>
                         <h2 className='text-[24px] text-[#1B3548] lg:md:block hidden'>Filters</h2>
                         <div className="lg:md:hidden flex justify-center items-center">
                             <div className="lg:md:hidden flex items-center justify-center mx-auto">
@@ -270,11 +270,11 @@ const DetailsList = () => {
                                         <p className="text-[16px] ml-[16px] font-medium italic">Current city</p>
                                     </div>
                                     <div className="mt-[21px] flex justify-between">
-                                        <div className="">
+                                        <div className="w-2/4">
                                             <p className="text-[16px] font-light"><span className="font-medium whitespace-nowrap">Comment: </span> Dear Client,  I am willing to provide you a best plan for
                                                 your house...   <span className="italic text-[#1D43A2]">read more</span></p>
                                         </div>
-                                        <div className="flex items-center mr-[10px]">
+                                        <div className="flex items-center mr-[10px] ml-[18px]">
                                             <Button sx={{ color: "#4D5163" }} className="whitespace-nowrap	mr-[75px]">View Profile</Button>
                                             <div className={classes.btn} >
                                                 Connect
@@ -342,7 +342,7 @@ const DetailsList = () => {
                                             <p className="text-[16px] ml-[16px] font-medium italic">Current city</p>
                                         </div>
                                         <div className="mt-[21px] flex justify-between">
-                                            <div className="">
+                                            <div className="w-2/4">
                                                 <p className="text-[16px] font-light"><span className="font-medium whitespace-nowrap">Comment: </span> Dear Client,  I am willing to provide you a best plan for
                                                     your house...   <span className="italic text-[#1D43A2]">read more</span></p>
                                             </div>
@@ -414,7 +414,7 @@ const DetailsList = () => {
                                                 <p className="text-[16px] ml-[16px] font-medium italic">Current city</p>
                                             </div>
                                             <div className="mt-[21px] flex justify-between">
-                                                <div className="">
+                                                <div className="w-2/4">
                                                     <p className="text-[16px] font-light"><span className="font-medium whitespace-nowrap">Comment: </span> Dear Client,  I am willing to provide you a best plan for
                                                         your house...   <span className="italic text-[#1D43A2]">read more</span></p>
                                                 </div>
