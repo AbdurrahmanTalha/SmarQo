@@ -11,7 +11,7 @@ const Feedback = () => {
         <div className="border-0 m-0 p-0 mb-24">
             <Box sx={{ width: '100%', bgcolor: '#1D1D1D' }} className="text-white border-0 lg:md:h-[215px] h-[77px]">
                 <div className="flex flex-col justify-center items-center">
-                    <p className="lg:md:text-[36px] lg:md:my-[35px] text-center text-[23px] font-bold lg:md:mt-0 mt-[5%]">Feedback</p>
+                    <p className="lg:md:text-[36px] lg:md:my-[35px] text-center text-[23px] font-bold mt-[5%]">Feedback</p>
                     <p className="lg:md:text-[21px] text-center text-[13px] lg:md:block hidden">House Plans for a 2400 sqft land in Whitefield Banglore</p>
                 </div>
                 <div className="flex items-center ml-[17px] mt-[-25px]">
