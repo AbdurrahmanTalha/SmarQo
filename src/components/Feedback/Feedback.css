@@ -1,0 +1,11 @@
+.feed-btn {
+    width: "fit-content";
+    font-size: "0.8rem";
+    color: "var(--white)";
+    background-color: "var(--btn-bgcolor)";
+    cursor: "pointer";
+    padding: "8px 35px";
+    border-radius: "5px";
+    text-transform: "capitalize";
+    
+  }
