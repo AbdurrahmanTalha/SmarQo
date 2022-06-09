@@ -8,6 +8,7 @@ const paths = {
   detailsList: "/detailsList",
   detailsProfile: "/detailsProfile",
   feedback: "/feedback",
+  dashboard: "/dashboard",
 };
 
 module.exports = paths;
