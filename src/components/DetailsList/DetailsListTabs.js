@@ -39,7 +39,7 @@ const DetailsListTabs = () => {
                     centered
                 >
                     <Tab label={<span className="text-[#ffffff] text-[22px]">Details List</span>} />
-                    <Tab label={<span className="text-[#ffffff] text-[22px]">Smart quotes</span>} />
+                    <Tab label={<span className="text-[#ffffff] text-[22px]">Connected</span>} />
                 </Tabs>
             </Box>
             {selectedTab === 0 && <DetailsList />}
