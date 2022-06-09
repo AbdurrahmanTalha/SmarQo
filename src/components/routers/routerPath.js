@@ -7,6 +7,7 @@ const paths = {
   reqDetails: "/reqDetails",
   detailsList: "/detailsList",
   detailsProfile: "/detailsProfile",
+  feedback: "/feedback",
 };
 
 module.exports = paths;

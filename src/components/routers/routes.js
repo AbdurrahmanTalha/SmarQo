@@ -9,6 +9,7 @@ import Register from "../register/Register";
 import DetailsListTabs from "../DetailsList/DetailsListTabs"
 import DetailsProfile from "../DetailsProfile/DetailsProfile"
 import paths from "./routerPath";
+import Feedback from "../Feedback/Feedback";
 
 
 const RoutesPath = () => {
@@ -26,6 +27,7 @@ const RoutesPath = () => {
       <Route exact path={paths.reqDetails} element={<DetailsTabs></DetailsTabs>}></Route>
       <Route exact path={paths.detailsList} element={<DetailsListTabs></DetailsListTabs>}></Route>
       <Route exact path={paths.detailsProfile} element={<DetailsProfile></DetailsProfile>}></Route>
+      <Route exact path={paths.feedback} element={<Feedback></Feedback>}></Route>
       {/* <Route exact path={paths.connect} element={<Connected></Connected>}></Route> */}
     </Routes>
   );
