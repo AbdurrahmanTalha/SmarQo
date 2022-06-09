@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.845b3658.css",
-    "main.js": "/static/js/main.1ad34e61.js",
+    "main.css": "/static/css/main.d44211e9.css",
+    "main.js": "/static/js/main.b7d4cf17.js",
     "static/js/787.a5f76b4a.chunk.js": "/static/js/787.a5f76b4a.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/Guy.png": "/static/media/Guy.540ee9f0f18dd91f58c6.png",
     "static/media/Mask Group 2.png": "/static/media/Mask Group 2.540ee9f0f18dd91f58c6.png",
     "static/media/pexels-karolina-grabowska-6029170.png": "/static/media/pexels-karolina-grabowska-6029170.8d8aa7d68663e308d244.png",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
@@ -14,12 +15,12 @@
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/sqo log.png": "/static/media/sqo log.e05f40430c06e98584e6.png",
     "index.html": "/index.html",
-    "main.845b3658.css.map": "/static/css/main.845b3658.css.map",
-    "main.1ad34e61.js.map": "/static/js/main.1ad34e61.js.map",
+    "main.d44211e9.css.map": "/static/css/main.d44211e9.css.map",
+    "main.b7d4cf17.js.map": "/static/js/main.b7d4cf17.js.map",
     "787.a5f76b4a.chunk.js.map": "/static/js/787.a5f76b4a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.845b3658.css",
-    "static/js/main.1ad34e61.js"
+    "static/css/main.d44211e9.css",
+    "static/js/main.b7d4cf17.js"
   ]
 }

@@ -1,36 +1,26 @@
-import { Box, Paper, Table, TableBody, TableCell, TableHead, TableRow } from '@mui/material';
+import { Box } from '@mui/material';
 import React, { useState } from 'react';
+import { makeStyles } from "@mui/styles"
 import Guy from "../../asserts/Guy.png"
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import TableContainer from '@mui/material/TableContainer';
+import ActiveRequest from './ActiveRequest';
+import OldRequest from './OldRequest';
+
 
 const Dashboard = () => {
     const [selectedTab, setSelectedTab] = React.useState(0);
-
+    const useStyles = makeStyles({
+        table: {
+            minWidth: "auto",
+            borderSpacing: "0 4px",
+            border: "none"
+        }
+    })
     const handleSelectedTab = (event, newValue) => {
         setSelectedTab(newValue);
     };
-    const tableData = [
-        {
-            id: 1,
-            quote_type: "Construction Plan",
-            status: "pending",
-            action: "waiting"
-        },
-        {
-            id: 2,
-            quote_type: "Construction Plan",
-            status: "Active",
-            action: "View Quotes"
-        },
-        {
-            id: 3,
-            quote_type: "Construction Plan",
-            status: "Active",
-            action: "View Quotes"
-        }
-    ]
+
     return (
         <div className="border-0 m-0 mb-24 max-w-full">
             <Box sx={{ width: '100%', bgcolor: '#1D1D1D' }} className="text-white border-0 h-[333px] ">
@@ -92,35 +82,12 @@ const Dashboard = () => {
                             onChange={handleSelectedTab}
                             centered
                         >
-                            <Tab label={<span className="text-[#333] text-[22px]">Details List</span>} />
-                            <Tab label={<span className="text-[#333] text-[22px]">Connected</span>} />
+                            <Tab label={<span className="text-[#1D1D1D] capitalize text-[21px] font-light"><span className="font-medium">Active</span> Request</span>} />
+                            <Tab label={<span className="text-[#1D1D1D] capitalize text-[21px] font-light"><span className="font-medium">Old</span> Request</span>} />
                         </Tabs>
                     </Box>
-                    <div>
-                        <TableContainer component={Paper}>
-                            <Table>
-                                <TableHead>
-                                    <TableCell align="center" colSpan={2}>Quotes type</TableCell>
-                                    <TableCell align="center" colSpan={2}>Status</TableCell>
-                                    <TableCell align="center" colSpan={2}>Action</TableCell>
-                                    <TableCell align="center" colSpan={2}>Details</TableCell>
-                                </TableHead>
-                                <TableBody>
-                                    {tableData.map((row) => (
-                                        <TableRow
-                                            key={row.id}
-                                            sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                                        >
-                                            <TableCell align="middle">{row.quote_type}</TableCell>
-                                            <TableCell align="middle">{row.status}</TableCell>
-                                            <TableCell align="middle">{row.action}</TableCell>
-                                            {/* <TableCell align="right">{row.protein}</TableCell> */}
-                                        </TableRow>
-                                    ))}
-                                </TableBody>
-                            </Table>
-                        </TableContainer>
-                    </div>
+                    {selectedTab === 0 && <ActiveRequest></ActiveRequest>}
+                    {selectedTab === 1 && <OldRequest></OldRequest>}
                 </div>
             </div>
         </div>
