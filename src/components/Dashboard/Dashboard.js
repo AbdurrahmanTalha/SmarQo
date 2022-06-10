@@ -23,15 +23,15 @@ const Dashboard = () => {
 
     return (
         <div className="border-0 m-0 mb-24 max-w-full">
-            <Box sx={{ width: '100%', bgcolor: '#1D1D1D' }} className="text-white border-0 h-[333px] ">
+            <Box sx={{ width: '100%', bgcolor: '#1D1D1D' }} className="text-white border-0 lg:md:h-[333px] h-[64px]">
                 <div className="flex items-center ml-[17px] pt-[30px]">
                     <button className="b-triangle lg:md:hidden block"></button>
                     <button className="lg:md:hidden  text-[#707070] text-[15px] flex items-center pl-[5px]">Back</button>
-                    <p className="text-[30px] lg:md:ml-[255px] mt-[11px] font-light"><span className="font-bold">Users</span> Dashboard</p>
+                    <p className="lg:md:text-[30px]  ml-[31px] text-[16px] lg:md:ml-[255px] lg:md:mt-[11px] font-light"><span className="lg:md:font-bold font-medium">Users</span> Dashboard</p>
 
                 </div>
             </Box>
-            <div className="rounded-[10px] mb-[68px] pt-[38px] w-auto lg:w-[1000px] mx-auto pb-[45px] mt-[-172px] lg:md:shadow-[#6361613d] lg:md:shadow-md bg-[#FFFFFF] flex ">
+            <div className="rounded-[10px] mb-[68px] lg:md:block hidden pt-[38px] w-auto lg:w-[1000px] mx-auto pb-[45px] mt-[-172px] lg:md:shadow-[#6361613d] lg:md:shadow-md bg-[#FFFFFF] flex ">
                 <div className="flex justify-between w-full">
                     <div className="flex ml-[33px]">
                         <img src={Guy} alt="" className="w-[177px] h-[192px]" />
