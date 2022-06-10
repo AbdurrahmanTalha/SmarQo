@@ -16,8 +16,8 @@ const DetailsProfile = () => {
                     <button className="lg:md:hidden  text-[#707070] text-[15px] flex items-center pl-[5px]">Back</button>
                 </div>
             </Box>
-            <div className="pt-[47px] pb-[53px] lg:w-[1602px] lg:max-w-[fit] flex justify-center items-center  rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md bg-[#FFFFFF] lg:md:mx-auto  
-            mt-[-443px]">
+            <div className="pt-[47px]  pb-[53px] lg:w-[1602px] lg:max-w-fit flex justify-center items-center  rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md bg-[#FFFFFF] lg:md:mx-auto mt-[-443px]">
+                <div className="">
                     <div className=" hidden lg:md:block">
                         <div className="lg:md:mt-[-35px] flex justify-end mr-[-15px]">
                             <div className='flex items-end'>

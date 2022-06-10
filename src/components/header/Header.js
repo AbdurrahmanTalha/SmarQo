@@ -8,11 +8,30 @@ import Select from "../helper/select/Select";
 import { Avatar } from "@mui/material";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import EmailIcon from "@mui/icons-material/Email";
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import Divider from '@mui/material/Divider';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import Tooltip from '@mui/material/Tooltip';
+import PersonAdd from '@mui/icons-material/PersonAdd';
+import Settings from '@mui/icons-material/Settings';
+import Logout from '@mui/icons-material/Logout';
+import ListItemIcon from '@mui/material/ListItemIcon';
 
 const Header = () => {
-  const [islogin, setislogin] = useState(false);
+  const [islogin, setislogin] = useState(true);
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
-    <div className="header_container pb-5">
+    <div className="header_container">
       <div className="header">
         <div className="left_header">
           <div className="logo mr-[-45px] ml-[-45px] lg:md:ml-0">
@@ -29,7 +48,11 @@ const Header = () => {
           />
         </div>
         <div className="right_header">
-          <div className="right_header_section1 text-[1rem]">Join as a Professional</div>
+          {
+            islogin ? (
+              <></>
+            ) : <div className="right_header_section1 text-[1rem]">Join as a Professional</div>
+          }
           <div
             className="right_header_section2"
             style={islogin ? { gap: "10px" } : {}}
@@ -38,11 +61,75 @@ const Header = () => {
               <div className="login_signup_btns">
                 <NotificationsIcon />
                 <EmailIcon />
-                <Avatar
-                  alt="Remy Sharp"
-                  src="/static/images/avatar/1.jpg"
-                  sx={{ width: "20px", height: "20px", fontSize: ".9rem" }}
-                />
+                <Tooltip title="Account settings">
+                  <IconButton
+                    onClick={handleClick}
+                    size="small"
+                
+                    aria-controls={open ? 'account-menu' : undefined}
+                    aria-haspopup="true"
+                    aria-expanded={open ? 'true' : undefined}
+                  >
+                    <Avatar
+                      alt="Remy Sharp"
+                      src="/static/images/avatar/1.jpg"
+                      className="ml-0" sx={{ width: "20px", height: "20px", fontSize: ".9rem" }}
+                    />
+                  </IconButton>
+                </Tooltip>
+                <Menu
+                  anchorEl={anchorEl}
+                  id="account-menu"
+                  open={open}
+                  onClose={handleClose}
+                  onClick={handleClose}
+                  PaperProps={{
+                    elevation: 0,
+                    sx: {
+                      overflow: 'visible',
+                      filter: 'drop-shadow(0px 2px 8px rgba(0,0,0,0.32))',
+                      mt: 1.5,
+                      '& .MuiAvatar-root': {
+                        width: 191,
+                        height: 32,
+                        ml: -0.5,
+                        mr: 1,
+                      },
+                      '&:before': {
+                        content: '""',
+                        display: 'block',
+                        position: 'absolute',
+                        top: 0,
+                        right: 14,
+                        width: 10,
+                        height: 10,
+                        bgcolor: 'background.paper',
+                        transform: 'translateY(-50%) rotate(45deg)',
+                        zIndex: 0,
+                      },
+                    },
+                  }}
+                  transformOrigin={{ horizontal: 'right', vertical: 'top' }}
+                  anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
+                >
+                  <MenuItem>
+                    Old Requests
+                  </MenuItem>
+                  <MenuItem>
+                    Notifactions
+                  </MenuItem>
+                  <MenuItem>
+                    Account Settings
+                  </MenuItem>
+                  <Divider />
+                  <MenuItem>
+                    Switch to seller
+                  </MenuItem>
+                  <Divider />
+                  <MenuItem>
+                    Logout
+                  </MenuItem>
+                </Menu>
               </div>
             ) : (
               <div className="login_signup_btns">

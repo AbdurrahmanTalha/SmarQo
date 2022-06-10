@@ -11,6 +11,7 @@ import DetailsProfile from "../DetailsProfile/DetailsProfile"
 import paths from "./routerPath";
 import Feedback from "../Feedback/Feedback";
 import UserInfo from "../UserInfo/UserInfo";
+import Dashboard from "../Dashboard/Dashboard";
 
 
 const RoutesPath = () => {
@@ -30,6 +31,7 @@ const RoutesPath = () => {
       <Route exact path={paths.detailsProfile} element={<DetailsProfile></DetailsProfile>}></Route>
       <Route exact path={paths.feedback} element={<Feedback></Feedback>}></Route>
       <Route exact path={paths.userInfo} element={<UserInfo></UserInfo>}></Route>
+      <Route exact path={paths.dashboard} element={<Dashboard></Dashboard>}></Route>
     </Routes>
   );
 };
