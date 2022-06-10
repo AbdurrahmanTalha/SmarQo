@@ -27,7 +27,7 @@ const DetailsProfile = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        
                     <div className="lg:md:flex lg:md:pl-[91px] pl-0 justify-between ">
                         <div className="flex lg:md:px-0 px-[43px] ">
                             <img src={ChairGuy} alt="" className="lg:md:w-auto w-[129px] lg:md:h-[218px] h-[141px]" />
@@ -51,11 +51,9 @@ const DetailsProfile = () => {
                                 <p className="text-[#707070] text-[11px] font-medium lg:md:mt-[20px]">Liked & apricated by users</p>
                             </div>
                         </div>
-
                         <div className="lg:md:mt-[-35px] lg:md:mr-[-725px] mt-0 mr-0">
 
                         </div>
-
                         <div className="lg:md:block hidden mt-[17px]">
                             <div className="mr-[20px] text-[#1D1D1D] flex flex-col items-center">
                                 <h2 className="text-[22px] font-bold">INR 3500</h2>
