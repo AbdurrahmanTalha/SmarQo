@@ -23,12 +23,12 @@ const Feedback = () => {
             {/* card start */}
             <div className="pt-[112px] pb-[53px] lg:w-[1501px] lg:max-w-fit flex justify-center items-center  rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md bg-[#FFFFFF] lg:md:mx-auto">
                 <div className="">
-                    <div className="lg:md:flex lg:md:pl-[91px] pl-0 justify-between ">
+                    <div className="lg:md:flex lg:md:px-[91px] px-0 justify-between ">
                         <div className="flex lg:md:px-0 px-[43px] ">
                             <img src={ChairGuy} alt="" className="lg:md:w-[108px] w-[129px] lg:md:h-[117px] h-[141px]" />
                             <div className="lg:md:ml-[29px] ml-[43px] w-full">
                                 <div className='flex justify-between items-center'>
-                                    <h2 className="lg:md:text-[30px] text-[24px] font-medium lg:md:mr-[880px] mr-0">Full Name</h2>
+                                    <h2 className="lg:md:text-[30px] text-[24px] font-medium lg:md:mr-[700px] mr-0">Full Name</h2>
                                     <div className="lg:md:block hidden">
                                     <div className="flex items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="47" height="47" viewBox="0 0 46 46">
