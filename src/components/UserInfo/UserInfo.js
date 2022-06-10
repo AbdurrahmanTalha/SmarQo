@@ -71,7 +71,7 @@ const UserInfo = () => {
             <div className="pt-[47px] pb-[53px] lg:md:w-[1082px] rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md bg-[#FFFFFF] lg:md:mx-auto
             lg:md:mt-[-220px] mt-0 lg:md:pl-[88px] pl-[37px] lg:md:pr-[83px] pr-[30px] 
             lg:md:pt-[66px]">
-                <h2 className="lg:md:text-[30px] text-[#FFFFFF] lg:md:mt-[-130px] mt-0 lg:md:mb-[130px] mb-0 lg:md:ml-[-270px] ml-0"><span className="font-medium">User</span> <span className="font-light">Dashboard</span></h2>
+                <h2 className="lg:md:text-[30px] text-[#FFFFFF] lg:md:mt-[-130px] mt-0 lg:md:mb-[85px] mb-0 lg:md:ml-[-270px] ml-0"><span className="font-medium">User</span> <span className="font-light">Dashboard</span></h2>
                 <div className="w-full">
                     <div className="flex justify-between">
                         <p className="lg:md:text-[16px] text-[14px] text-[#1D1D1D]">Chat remainder</p>
