@@ -10,13 +10,7 @@ import OldRequest from './OldRequest';
 
 const Dashboard = () => {
     const [selectedTab, setSelectedTab] = React.useState(0);
-    const useStyles = makeStyles({
-        table: {
-            minWidth: "auto",
-            borderSpacing: "0 4px",
-            border: "none"
-        }
-    })
+
     const handleSelectedTab = (event, newValue) => {
         setSelectedTab(newValue);
     };

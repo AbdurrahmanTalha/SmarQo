@@ -8,7 +8,7 @@ import TextField from '@mui/material/TextField';
 import ChairGuy from "../../asserts/Mask Group 6.png"
 import Flag from "../../asserts/Mask Group 3.png"
 import { makeStyles } from '@mui/styles';
-import { Divider } from '@mui/material';
+import { createTheme, Divider } from '@mui/material';
 import Pagination from '@mui/material/Pagination';
 import PaginationItem from '@mui/material/PaginationItem';
 import Stack from '@mui/material/Stack';
@@ -18,23 +18,39 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
+import { ThemeProvider } from '@material-ui/styles';
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 const DetailsList = () => {
-    const useStyle = makeStyles({
-        btn: {
-            width: "fit-content",
-            fontSize: "0.8rem",
-            color: "var(--white)",
-            backgroundColor: "var(--btn-bgcolor)",
-            cursor: "pointer",
-            padding: "8px 35px",
-            borderRadius: "5px",
-            textTransform: "capitalize",
-        },
-    });
+    const [value1, setValue1] = React.useState([0, 100]);
+    const [experience, setExperience] = React.useState([0, 100]);
 
+    const useStyle = makeStyles({
+        components: {
+            btn: {
+                width: "fit-content",
+                fontSize: "0.8rem",
+                color: "var(--white)",
+                backgroundColor: "var(--btn-bgcolor)",
+                cursor: "pointer",
+                padding: "8px 35px",
+                borderRadius: "5px",
+                textTransform: "capitalize",
+            }
+
+        }
+    });
+    const muiTheme = createTheme({
+        overrides: {
+
+        }
+    });
+    const handleChange1 = (event, newValue, activeThumb) => {
+        setValue1(newValue)
+    };
+    const handleChange2 = (event, newValue, activeThumb) => {
+        setExperience(newValue)
+    };
 
     const [expanded, setExpanded] = React.useState(false);
 
@@ -47,7 +63,7 @@ const DetailsList = () => {
 
     return (
         <div className="main_container_wrapper py-0 lg:md:py-[3rem] lg:md:px-[3rem] px-[0]">
-            <div className="lg:md:mx-auto  pb-[50px] rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md  lg:md:bg-[#FFFFFF] ">
+            <div className="lg:md:mx-auto lg:w-[1302px]  pb-[50px] rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md  lg:md:bg-[#FFFFFF] ">
 
                 <div className="lg:md:flex block ">
                     <div className='lg:md:pt-[47px] lg:md:pl-[53px] lg:md:pb-[53px] '>
@@ -91,7 +107,23 @@ const DetailsList = () => {
 
                                                     <div className="flex justify-start items-center pl-[14px] mt-[42px] mb-[28px]">
                                                         <Box width={316}>
-                                                            <Slider aria-label="Default" valueLabelDisplay="auto" />
+                                                            <ThemeProvider theme={useStyle}>
+
+                                                                <Slider
+                                                                    sx={{
+                                                                        color: '#1B3548',
+                                                                        '& .MuiSlider-thumb': {
+                                                                            // borderRadius: '1px',
+                                                                            borderColor: "#333 !important"
+                                                                        },
+                                                                    }}
+                                                                    getAriaLabel={() => 'Minimum distance'}
+                                                                    value={value1}
+                                                                    onChange={handleChange1}
+                                                                    valueLabelDisplay="auto"
+                                                                    disableSwap
+                                                                />
+                                                            </ThemeProvider>
                                                         </Box>
                                                     </div>
 
@@ -108,7 +140,23 @@ const DetailsList = () => {
 
                                                     <div className="flex justify-start items-center pl-[14px] mt-[42px] mb-[28px]">
                                                         <Box width={316}>
-                                                            <Slider aria-label="Default" valueLabelDisplay="auto" />
+                                                            <ThemeProvider theme={useStyle}>
+
+                                                                <Slider
+                                                                    sx={{
+                                                                        color: '#1B3548',
+                                                                        '& .MuiSlider-thumb': {
+                                                                            // borderRadius: '1px',
+                                                                            borderColor: "#333 !important"
+                                                                        },
+                                                                    }}
+                                                                    getAriaLabel={() => 'Minimum distance'}
+                                                                    value={experience}
+                                                                    onChange={handleChange2}
+                                                                    valueLabelDisplay="auto"
+                                                                    disableSwap
+                                                                />
+                                                            </ThemeProvider>
                                                         </Box>
                                                     </div>
 
@@ -169,7 +217,23 @@ const DetailsList = () => {
                                 <h2 className="mt-[34px] text-xl text-[#1D1D1D] font-medium">Price Range <span className='font-medium text-[13px]'>(per hour)</span></h2>
                                 <div className="flex justify-start items-center pl-[14px] mt-[42px] mb-[28px]">
                                     <Box width={316}>
-                                        <Slider aria-label="Default" valueLabelDisplay="auto" />
+                                        <ThemeProvider theme={useStyle}>
+
+                                            <Slider
+                                                sx={{
+                                                    color: '#1B3548',
+                                                    '& .MuiSlider-thumb': {
+                                                        // borderRadius: '1px',
+                                                        borderColor: "#333 !important"
+                                                    },
+                                                }}
+                                                getAriaLabel={() => 'Minimum distance'}
+                                                value={value1}
+                                                onChange={handleChange1}
+                                                valueLabelDisplay="auto"
+                                                disableSwap
+                                            />
+                                        </ThemeProvider>
                                     </Box>
                                 </div>
                                 <div className="flex justify-between mb-[28px] w-[373px]">
@@ -181,7 +245,22 @@ const DetailsList = () => {
                                 <h2 className="mt-[34px] text-xl text-[#1D1D1D]">Experience<span className='text-[13px]'>(years)</span></h2>
                                 <div className="flex justify-start items-center pl-[14px] mt-[42px] mb-[28px]">
                                     <Box width={316}>
-                                        <Slider aria-label="Default" valueLabelDisplay="auto" />
+                                        <ThemeProvider theme={useStyle}>
+                                            <Slider
+                                                sx={{
+                                                    color: '#1B3548',
+                                                    '& .MuiSlider-thumb': {
+                                                        // borderRadius: '1px',
+                                                        borderColor: "#333 !important"
+                                                    },
+                                                }}
+                                                getAriaLabel={() => 'Minimum distance'}
+                                                value={experience}
+                                                onChange={handleChange2}
+                                                valueLabelDisplay="auto"
+                                                disableSwap
+                                            />
+                                        </ThemeProvider>
                                     </Box>
                                 </div>
                                 <div className="flex justify-between mb-[28px] w-[373px]">
