@@ -1,10 +1,9 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import Switch from '@mui/material/Switch'; 
 import InputUnstyled from '@mui/base/InputUnstyled';
 import { styled } from '@mui/system';
+import Toggle from '../helper/toggle/Toggle';
 
-const label = { inputProps: { 'aria-label': 'Switch demo' } };
 const blue = {
     100: '#DAECFF',
     200: '#80BFFF',
@@ -76,15 +75,15 @@ const UserInfo = () => {
                 <div className="w-full">
                     <div className="flex justify-between">
                         <p className="lg:md:text-[16px] text-[14px] text-[#1D1D1D]">Chat remainder</p>
-                        <Switch {...label} defaultChecked />
+                        <Toggle />
                     </div>
                     <div className="flex justify-between lg:md:mt-[39px] mt-0">
                         <p className="lg:md:text-[16px] text-[14px] text-[#1D1D1D]">E-mail remainder</p>
-                        <Switch {...label} defaultChecked />
+                        <Toggle />
                     </div>
                     <div className="flex justify-between lg:md:mt-[39px] mt-0">
                         <p className="lg:md:text-[16px] text-[14px] text-[#1D1D1D]">Recommendations latest news and updates</p>
-                        <Switch {...label} defaultChecked />
+                        <Toggle />
                     </div>
                 </div>
 
@@ -95,15 +94,15 @@ const UserInfo = () => {
                     <div className="w-full">
                         <div className="flex justify-between">
                             <p className="lg:md:text-[16px] text-[14px] text-[#1D1D1D]">Phone Number</p>
-                            <Switch {...label} />
+                            <Toggle />
                         </div>
                         <div className="flex justify-between lg:md:mt-[39px] mt-[31px]">
                             <p className="lg:md:text-[16px] text-[14px] text-[#1D1D1D]">E mail remainder</p>
-                            <Switch {...label} defaultChecked />
+                            <Toggle />
                         </div>
                         <div className="flex justify-between lg:md:mt-[39px] mt-[31px]">
                             <p className="lg:md:text-[16px] text-[14px] text-[#1D1D1D]">E-mail remainder</p>
-                            <Switch {...label} defaultChecked />
+                            <Toggle />
                         </div>
                     </div>
                 </div>
