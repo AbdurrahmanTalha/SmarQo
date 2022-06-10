@@ -10,6 +10,7 @@ const paths = {
   feedback: "/feedback",
   userInfo: "/userInfo",
   dashboard: "/dashboard",
+  accountSettings: "/accountSettings",
 };
 
 module.exports = paths;

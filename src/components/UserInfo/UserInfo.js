@@ -1,6 +1,7 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import Switch from '@mui/material/Switch'; import InputUnstyled from '@mui/base/InputUnstyled';
+import Switch from '@mui/material/Switch'; 
+import InputUnstyled from '@mui/base/InputUnstyled';
 import { styled } from '@mui/system';
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
