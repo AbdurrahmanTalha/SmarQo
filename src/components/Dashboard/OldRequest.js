@@ -62,20 +62,55 @@ const OldRequest = () => {
                             key={row.id}
 
                         >
-                            <TableCell align="left" >{row.name}</TableCell>
-                            <TableCell align="left" >{
-                                row.liked
-                                    ?
-                                    <button className="rounded-full py-[7px] flex items-center justify-center text-[16px] font-normal w-[160px] bg-[#1B4830] mr-[192px] px-[49px] text-white">Liked</button>
-                                    :
-                                    <button className="rounded-full py-[7px] flex items-center justify-center text-[16px] font-normal text-[#000] border-2 mr-[192px] border-[#707070] px-[49px]">Disliked</button>
+                            <TableCell align="left" className="text-[14px]  lg:md:font-normal font-bold">
+                                <div className="lg:md:block hidden">
+                                    {row.name}
+                                </div>
+                            </TableCell>
+                            <TableCell align="left" className="lg:md:hidden block ml-[34px]">
+                                <div className="flex">
+                                    <div className="mr-[-144px]">
+                                        <p className="text-[15px] font-bold mb-[24px] whitespace-nowrap">{row.name}</p>
+                                        {
+                                            row.liked
+                                                ?
+                                                <button className="rounded-full flex items-center justify-center text-[13px] font-light h-[24px] w-[92px] bg-[#1B4830] mr-[270px] px-[49px] text-white">Liked</button>
+                                                :
+                                                <button className="rounded-full flex items-center justify-center text-[13px] h-[24px]  font-normal text-[#000] border-2 mr-[270px] w-[92px] border-[#707070] px-[49px]">Disliked</button>
 
+                                        }
+                                    </div>
+                                    <div className="lg:md:hidden block">
+                                        <p className="text-[12px] font-light text-center underline text-[#274962] mb-[22px]">{row.date}</p>
+                                        {
+                                            row.completed ?
+                                                <button className="lg:md:w-[139px] w-[108px] h-[28px] lg:md:h-[36px] bg-[#0C0C0C] text-white rounded-[5px] text-[15px] font-light">View Quotes</button> :
+                                                <button className="lg:md:w-[139px] w-[108px] lg:md:h-[36px] h-[28px] bg-[#707070] text-white rounded-[5px] text-[15px] font-light">Waiting...</button>
+                                        }
+                                    </div>
+                                </div>
+                            </TableCell>
+                            <TableCell className="lg:md:block hidden" align="left">
+                                <div>
+                                    {
+                                        row.liked
+                                            ?
+                                            <button className="rounded-full py-[7px] flex items-center justify-center text-[16px] font-normal bg-[#1B4830] mr-[192px] h-[28px] w-[108px] px-[49px] text-white">Liked</button>
+                                            :
+                                            <button className="rounded-full py-[7px] flex items-center justify-center text-[16px] font-normal text-[#000]  w-[108px] h-[28px] border-2 mr-[192px] border-[#707070] px-[49px]">Disliked</button>
 
-                            }</TableCell>
-                            <TableCell align="center">{
-                                row.completed ? <button className="w-[139px] h-[36px] bg-[#0C0C0C] text-white rounded-[5px] text-[15px] font-light">Complete</button> : <button className="w-[139px] h-[36px] bg-[#707070] text-white rounded-[5px] text-[15px] font-light">Waiting...</button>
-                            }</TableCell>
-                            <TableCell align="right">{row.date}
+                                    }</div>
+                            </TableCell>
+                            <TableCell align="center" className="">
+                                <div className="lg:md:block hidden">
+
+                                    {
+                                        row.completed ? <button className="w-[139px] h-[36px] bg-[#0C0C0C] text-white rounded-[5px] text-[15px] font-light">View Quotes</button> : <button className="w-[139px] h-[36px] bg-[#707070] text-white rounded-[5px] text-[15px] font-light">Waiting...</button>
+                                    }
+                                </div>
+                            </TableCell>
+
+                            <TableCell align="right"><span className="lg:md:block hidden">{row.date}</span>
                             </TableCell>
                         </TableRow>
                     ))}

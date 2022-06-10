@@ -75,7 +75,7 @@ const Dashboard = () => {
             </div>
             <div className="rounded-[10px] mb-[172px] bg-[#ffff] lg:md:mx-auto  lg:md:w-[1176px] shadow-lg lg:md:h-[443px] shadow-[#6361613d] flex justify-center border-1">
                 <div>
-                    <Box className="mb-[80px]">
+                    <Box className="lg:md:mb-[80px] mb-[20px]">
                         <Tabs
                             TabIndicatorProps={{ style: { border: "2px solid #707070", background: "#707070" } }}
                             value={selectedTab}
