@@ -27,7 +27,7 @@ const DetailsProfile = () => {
                                 </div>
                             </div>
                         </div>
-                        
+                    </div>
                     <div className="lg:md:flex lg:md:pl-[91px] pl-0 justify-between ">
                         <div className="flex lg:md:px-0 px-[43px] ">
                             <img src={ChairGuy} alt="" className="lg:md:w-auto w-[129px] lg:md:h-[218px] h-[141px]" />
@@ -51,9 +51,11 @@ const DetailsProfile = () => {
                                 <p className="text-[#707070] text-[11px] font-medium lg:md:mt-[20px]">Liked & apricated by users</p>
                             </div>
                         </div>
+
                         <div className="lg:md:mt-[-35px] lg:md:mr-[-725px] mt-0 mr-0">
 
                         </div>
+
                         <div className="lg:md:block hidden mt-[17px]">
                             <div className="mr-[20px] text-[#1D1D1D] flex flex-col items-center">
                                 <h2 className="text-[22px] font-bold">INR 3500</h2>
@@ -89,7 +91,7 @@ const DetailsProfile = () => {
                         <p className="text-[16px] lg:md:w-[50%] hidden lg:md:block font-light lg:md:ml-[91px] ml-[42.5px] lg:md:mt-[65px] mt-[48.5px]">Dear Client,  I am willing to provide you a best plan for  your house a best plan for  your house a best plan for  your house
                             a best plan for  your house a <br></br> best plan for  your house</p>
                     </div>
-                    <Divider variant="middle" className="pt-[51.5px] mx-[57px] lg:md:mb-[42.5px]mb-0 block lg:md:hidden" style={{marginTop: "54.5px"}} />
+                    <Divider variant="middle" className="pt-[51.5px] mx-[57px] lg:md:mb-[42.5px]mb-0 block lg:md:hidden" style={{ marginTop: "54.5px" }} />
                     <div className="flex justify-between pr-[73px] lg:md:hidden">
                         <p className="text-[16px] font-light lg:md:ml-[91px] ml-[42.5px] lg:md:mt-[65px] mt-[48.5px]">Dear Client,  I am willing to provide you a best plan for your<br /> house a best plan for  your house a best plan for  your house
                             a best plan for  your house a best plan for  your house</p>
