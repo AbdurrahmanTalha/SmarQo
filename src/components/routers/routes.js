@@ -10,6 +10,7 @@ import DetailsListTabs from "../DetailsList/DetailsListTabs"
 import DetailsProfile from "../DetailsProfile/DetailsProfile"
 import paths from "./routerPath";
 import Feedback from "../Feedback/Feedback";
+import UserInfo from "../UserInfo/UserInfo";
 
 
 const RoutesPath = () => {
@@ -28,7 +29,7 @@ const RoutesPath = () => {
       <Route exact path={paths.detailsList} element={<DetailsListTabs></DetailsListTabs>}></Route>
       <Route exact path={paths.detailsProfile} element={<DetailsProfile></DetailsProfile>}></Route>
       <Route exact path={paths.feedback} element={<Feedback></Feedback>}></Route>
-      {/* <Route exact path={paths.connect} element={<Connected></Connected>}></Route> */}
+      <Route exact path={paths.userInfo} element={<UserInfo></UserInfo>}></Route>
     </Routes>
   );
 };
