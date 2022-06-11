@@ -1,0 +1,15 @@
+@media (max-width: 424px) {
+  .toggle::after {
+    top: 14px;
+  }
+}
+@media (min-width: 1010px) and (max-width: 1455px) {
+  .header {
+    margin-left: -83px !important;
+  }
+}
+@media (min-width: 1456px) {
+  .header {
+    margin-left: -270px !important;
+  }
+}

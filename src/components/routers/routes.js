@@ -28,7 +28,6 @@ const RoutesPath = () => {
     },
   });
   return (
-  
     <ThemeProvider theme={theme}>
       <Routes>
         <Route exact path={paths.home} element={<Home />} />
