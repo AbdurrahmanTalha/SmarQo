@@ -27,7 +27,7 @@ const RoutesPath = () => {
       ].join(','),
     },
   });
-  return (    
+  return (
     <ThemeProvider theme={theme}>
       <Routes>
         <Route exact path={paths.home} element={<Home />} />
