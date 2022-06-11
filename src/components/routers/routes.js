@@ -13,6 +13,7 @@ import Feedback from "../Feedback/Feedback";
 import UserInfo from "../UserInfo/UserInfo";
 import Dashboard from "../Dashboard/Dashboard";
 import AccountSettings from "../AccountSettings/AccountSettings";
+import Chat from "../Chat/Chat";
 
 
 const RoutesPath = () => {
@@ -34,6 +35,7 @@ const RoutesPath = () => {
       <Route exact path={paths.userInfo} element={<UserInfo></UserInfo>}></Route>
       <Route exact path={paths.dashboard} element={<Dashboard></Dashboard>}></Route>
       <Route exact path={paths.accountSettings} element={<AccountSettings></AccountSettings>}></Route>
+      <Route exact path={paths.chat} element={<Chat></Chat>}></Route>
     </Routes>
   );
 };

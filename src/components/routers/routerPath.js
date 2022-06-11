@@ -11,6 +11,7 @@ const paths = {
   userInfo: "/userInfo",
   dashboard: "/dashboard",
   accountSettings: "/accountSettings",
+  chat: "/chat",
 };
 
 module.exports = paths;
