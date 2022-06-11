@@ -27,26 +27,7 @@ const RoutesPath = () => {
       ].join(','),
     },
   });
-  return (
-    <Routes>
-      <Route exact path={paths.home} element={<Home />} />
-      <Route
-        exact
-        path={paths.postRequirementNow}
-        element={<PostRequirement />}
-      />
-      <Route exact path={paths.login} element={<Login />} />
-      <Route exact path={paths.signup} element={<Register />} />
-      <Route exact path={paths.detailsCorrect} element={<DetailsCorrect></DetailsCorrect>}></Route>
-      <Route exact path={paths.reqDetails} element={<DetailsTabs></DetailsTabs>}></Route>
-      <Route exact path={paths.detailsList} element={<DetailsListTabs></DetailsListTabs>}></Route>
-      <Route exact path={paths.detailsProfile} element={<DetailsProfile></DetailsProfile>}></Route>
-      <Route exact path={paths.feedback} element={<Feedback></Feedback>}></Route>
-      <Route exact path={paths.userInfo} element={<UserInfo></UserInfo>}></Route>
-      <Route exact path={paths.dashboard} element={<Dashboard></Dashboard>}></Route>
-      <Route exact path={paths.accountSettings} element={<AccountSettings></AccountSettings>}></Route>
-      <Route exact path={paths.chat} element={<Chat></Chat>}></Route>
-    </Routes>
+  return (    
     <ThemeProvider theme={theme}>
       <Routes>
         <Route exact path={paths.home} element={<Home />} />

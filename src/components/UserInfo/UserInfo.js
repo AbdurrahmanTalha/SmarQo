@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import InputUnstyled from '@mui/base/InputUnstyled';
 import { styled } from '@mui/system';
 import Toggle from '../helper/toggle/Toggle';
+import "./UserInfo.css";
 
 const blue = {
     100: '#DAECFF',
@@ -69,23 +70,37 @@ const UserInfo = () => {
             </Box>
             {/* Card Start */}
             <div className="pt-[47px] pb-[53px] lg:md:w-[1082px] rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md bg-[#FFFFFF] lg:md:mx-auto
-            lg:md:mt-[-220px] mt-0 lg:md:pl-[88px] pl-[37px] lg:md:pr-[83px] pr-[30px] 
-            lg:md:pt-[66px]">
-                <h2 className="lg:md:text-[30px] text-[#FFFFFF] lg:md:mt-[-130px] mt-0 lg:md:mb-[85px] mb-0 lg:md:ml-[-270px] ml-0"><span className="font-medium">User</span> <span className="font-light">Dashboard</span></h2>
+            lg:mt-[-220px] sm:mt-0 lg:md:pl-[88px] pl-[37px] lg:md:pr-[83px] pr-[30px] 
+            lg:md:pt-[66px] ">
+                <h2 className="lg:md:text-[30px] text-[#FFFFFF] lg:md:mt-[-130px] mt-0 lg:md:mb-[85px] mb-0  header"><span className="font-medium">User</span> <span className="font-light">Dashboard</span></h2>
                 <div className="w-full">
                     <div className="flex justify-between">
                         <p className="lg:md:text-[16px] text-[14px] text-[#1D1D1D]">Chat remainder</p>
-                        <Toggle />
+                        <label for="1" class="inline-flex relative items-center cursor-pointer mr-5">
+                            <input type="checkbox" value="" id="1" class="sr-only peer" />
+                            <div class="lg:md:w-[55px] w-[40px] lg:md:h-[28px] h-[21px] bg-[#AEAEAE] rounded-full peer peer-checked:ring-1 dark:peer-checked:ring-[#707070] dark:[#AEAEAE] peer-checked:after:translate-x-full  after:content-[''] after:absolute lg:md:after:top-[3.5px] after:top-[2.5px]
+                                after:left-[4px] after:bg-[#1D1D1D] 
+                                peer-checked:after:bg-[#707070] after:border-[#1D1D1D] peer-checked:after:border-[#707070] after:rounded-full lg:md:after:h-[21px] after:h-[15px] lg:md:after:w-[21px] 
+                                after:w-[15px] after:transition-all dark:[#707070] 
+                                peer-checked:bg-[#FFFFFF]"></div>
+                        </label>
                     </div>
                     <div className="flex justify-between lg:md:mt-[39px] mt-[31px]">
-                        <p className="lg:md:text-[16px] text-[14px] text-[#1D1D1D]">E mail remainder</p>
-                        <Toggle />
+                        <p className="lg:md:text-[16px] text-[14px] text-[#1D1D1D]">E-mail remainder</p>
+                        <label for="2" class="inline-flex relative items-center cursor-pointer mr-5">
+                            <input type="checkbox" value="" id="2" class="sr-only peer" />
+                            <div class="lg:md:w-[55px] w-[40px] lg:md:h-[28px] h-[21px] bg-[#AEAEAE] rounded-full peer peer-checked:ring-1 dark:peer-checked:ring-[#707070] dark:[#AEAEAE] peer-checked:after:translate-x-full  after:content-[''] after:absolute lg:md:after:top-[3.5px] after:top-[2.5px]
+                                after:left-[4px] after:bg-[#1D1D1D] 
+                                peer-checked:after:bg-[#707070] after:border-[#1D1D1D] peer-checked:after:border-[#707070] after:rounded-full lg:md:after:h-[21px] after:h-[15px] lg:md:after:w-[21px] 
+                                after:w-[15px] after:transition-all dark:[#707070] 
+                                peer-checked:bg-[#FFFFFF]"></div>
+                        </label>
                     </div>
-                    <div className="flex justify-between lg:md:mt-[39px] mt-[31px]">
+                    <div className="flex justify-between lg:md:mt-[39px] mt-[31px] ">
                         <p className="lg:md:text-[16px] text-[14px] text-[#1D1D1D]">Recommendations latest news and updates</p>
-                        <label for="red-toggle" class="inline-flex relative items-center mr-5 cursor-pointer">
-                            <input type="checkbox" value="" id="red-toggle" class="sr-only peer" />
-                            <div class="lg:md:w-[55px] w-[40px] lg:md:h-[28px] h-[21px] bg-[#AEAEAE] rounded-full peer peer-checked:ring-1 dark:peer-checked:ring-[#707070] dark:[#AEAEAE] peer-checked:after:translate-x-full  after:content-[''] after:absolute lg:md:after:top-[3.5px] after:top-[13.5px]
+                        <label for="4" class="inline-flex relative items-center mr-5 cursor-pointer">
+                            <input type="checkbox" value="" id="4" class="sr-only peer" />
+                            <div class="toggle lg:md:w-[55px] w-[40px] lg:md:h-[28px] h-[21px] bg-[#AEAEAE] rounded-full peer peer-checked:ring-1 dark:peer-checked:ring-[#707070] dark:[#AEAEAE] peer-checked:after:translate-x-full  after:content-[''] after:absolute lg:after:top-[3.5px] md:after:top-[3px] after:top-[14px]
                                 after:left-[4px] after:bg-[#1D1D1D] 
                                 peer-checked:after:bg-[#707070] after:border-[#1D1D1D] peer-checked:after:border-[#707070] after:rounded-full lg:md:after:h-[21px] after:h-[15px] lg:md:after:w-[21px] 
                                 after:w-[15px] after:transition-all dark:[#707070] 
@@ -101,15 +116,36 @@ const UserInfo = () => {
                     <div className="w-full">
                         <div className="flex justify-between">
                             <p className="lg:md:text-[16px] text-[14px] text-[#1D1D1D]">Phone Number</p>
-                            <Toggle />
+                            <label for="4" class="inline-flex relative items-center mr-5 cursor-pointer">
+                                <input type="checkbox" value="" id="4" class="sr-only peer" />
+                                <div class="lg:md:w-[55px] w-[40px] lg:md:h-[28px] h-[21px] bg-[#AEAEAE] rounded-full peer peer-checked:ring-1 dark:peer-checked:ring-[#707070] dark:[#AEAEAE] peer-checked:after:translate-x-full  after:content-[''] after:absolute lg:md:after:top-[3.5px] after:top-[2.5px]
+                                after:left-[4px] after:bg-[#1D1D1D] 
+                                peer-checked:after:bg-[#707070] after:border-[#1D1D1D] peer-checked:after:border-[#707070] after:rounded-full lg:md:after:h-[21px] after:h-[15px] lg:md:after:w-[21px] 
+                                after:w-[15px] after:transition-all dark:[#707070] 
+                                peer-checked:bg-[#FFFFFF]"></div>
+                            </label>
                         </div>
                         <div className="flex justify-between lg:md:mt-[39px] mt-[31px]">
                             <p className="lg:md:text-[16px] text-[14px] text-[#1D1D1D]">E mail remainder</p>
-                            <Toggle />
+                            <label for="5" class="inline-flex relative items-center mr-5 cursor-pointer">
+                                <input type="checkbox" value="" id="5" class="sr-only peer" />
+                                <div class="lg:md:w-[55px] w-[40px] lg:md:h-[28px] h-[21px] bg-[#AEAEAE] rounded-full peer peer-checked:ring-1 dark:peer-checked:ring-[#707070] dark:[#AEAEAE] peer-checked:after:translate-x-full  after:content-[''] after:absolute lg:md:after:top-[3.5px] after:top-[2.5px]
+                                after:left-[4px] after:bg-[#1D1D1D] 
+                                peer-checked:after:bg-[#707070] after:border-[#1D1D1D] peer-checked:after:border-[#707070] after:rounded-full lg:md:after:h-[21px] after:h-[15px] lg:md:after:w-[21px] 
+                                after:w-[15px] after:transition-all dark:[#707070] 
+                                peer-checked:bg-[#FFFFFF]"></div>
+                            </label>
                         </div>
                         <div className="flex justify-between lg:md:mt-[39px] mt-[31px]">
                             <p className="lg:md:text-[16px] text-[14px] text-[#1D1D1D]">E-mail remainder</p>
-                            <Toggle />
+                            <label for="6" class="inline-flex relative items-center mr-5 cursor-pointer">
+                                <input type="checkbox" value="" id="6" class="sr-only peer" />
+                                <div class="lg:md:w-[55px] w-[40px] lg:md:h-[28px] h-[21px] bg-[#AEAEAE] rounded-full peer peer-checked:ring-1 dark:peer-checked:ring-[#707070] dark:[#AEAEAE] peer-checked:after:translate-x-full  after:content-[''] after:absolute lg:md:after:top-[3.5px] after:top-[2.5px]
+                                after:left-[4px] after:bg-[#1D1D1D] 
+                                peer-checked:after:bg-[#707070] after:border-[#1D1D1D] peer-checked:after:border-[#707070] after:rounded-full lg:md:after:h-[21px] after:h-[15px] lg:md:after:w-[21px] 
+                                after:w-[15px] after:transition-all dark:[#707070] 
+                                peer-checked:bg-[#FFFFFF]"></div>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -123,9 +159,9 @@ const UserInfo = () => {
                             <p className="lg:md:mr-[81px] mr-[63px] lg:md:text-[15px] text-[12px]">New Password </p>
                             <CustomInput aria-label="Demo input" placeholder="Password" />
                         </div>
-                        <div className="flex items-center">
-                            <p className="lg:md:mr-[58px] mr-[41px] lg:md:text-[15px] text-[12px]">Confirm Password</p>
-                            <CustomInput aria-label="Demo input" placeholder="Confirm Password" />
+                        <div className="flex items-center lg:md:mb-[24px] mb-[20px]">
+                            <p className="lg:md:mr-[57px] mr-[43px] lg:md:text-[15px] text-[12px]">Confirm Password </p>
+                            <CustomInput aria-label="Demo input" placeholder="Password" />
                         </div>
                     </div>
 
