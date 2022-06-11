@@ -46,7 +46,7 @@ const ActiveRequest = () => {
     ]
     return (
         <TableContainer>
-            <Table sx={{ overflow: "auto" }} className={classes.table}>
+            <Table sx={{ overflow: "hidden" }} className={classes.table}>
                 <TableHead>
                     <TableCell align="center">
                         <span className="text-[16px] lg:md:block hidden  font-medium mr-[149px] text-[#274962]">Quotes type</span>
@@ -74,7 +74,7 @@ const ActiveRequest = () => {
                                 </TableCell>
                                 <TableCell align="left" className="lg:md:hidden ml-[34px]">
                                     <div className="flex">
-                                        <div className="mr-[144px]">
+                                        <div className="mr-[34px]">
                                             <p className="text-[15px] font-bold mb-[24px] whitespace-nowrap">{row.quote_type}</p>
                                             {
                                                 row.pending
@@ -122,7 +122,7 @@ const ActiveRequest = () => {
                                         aria-expanded={open ? 'true' : undefined}
                                         aria-haspopup="true"
                                         onClick={handleClick}
-                                        
+
                                     >
                                         <MoreVertIcon />
                                     </IconButton>
