@@ -8,7 +8,7 @@ import './Feedback.css';
 
 const Feedback = () => {
     return (
-        <div className="border-0 m-0 p-0 mb-24">
+        <div className="border-0 m-0 p-0 pb-24 bg-[#F5F5F5]">
             <Box sx={{ width: '100%', bgcolor: '#1D1D1D' }} className="text-white border-0 lg:md:h-[215px] h-[77px]">
                 <div className="flex flex-col justify-center items-center">
                     <p className="lg:md:text-[36px] lg:md:my-[35px] text-center text-[23px] font-bold mt-[5%]">Feedback</p>

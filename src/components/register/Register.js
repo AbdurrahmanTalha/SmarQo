@@ -19,7 +19,7 @@ const Register = () => {
   const classes = useStyle()
   const [open, setopen] = useState(false)
   return (
-    <div className="main_container_wrapper">
+    <div className="main_container_wrapper bg-[#F5F5F5]">
       <div className="card">
         <div style={{ fontSize: "2.8rem" }}>Register</div>
         <div className={classes.firstnameLastname}>

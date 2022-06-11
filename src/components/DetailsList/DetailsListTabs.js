@@ -13,7 +13,7 @@ const DetailsListTabs = () => {
         setSelectedTab(newValue);
     };
     return (
-        <div className="border-0 m-0 p-0 ">
+        <div className="border-0 m-0 p-0 bg-[#F5F5F5]">
             <Box sx={{ width: '100%', bgcolor: '#1D1D1D' }} className="text-white border-0 pb-[1px] pt-[53px] ">
                 {selectedTab === 0 && <>
                     <div className="lg:md:px-[127px] mb-[32px]  lg:md:flex w-auto justify-between">
@@ -38,8 +38,8 @@ const DetailsListTabs = () => {
                     onChange={handleSelectedTab}
                     centered
                 >
-                    <Tab label={<span className="text-[#ffffff] text-[22px]">Details List</span>} />
-                    <Tab label={<span className="text-[#ffffff] text-[22px]">Connected</span>} />
+                    <Tab label={<span className="text-[#ffffff] text-[22px] normal-case">Details List</span>} />
+                    <Tab label={<span className="text-[#ffffff] text-[22px] normal-case">Connected</span>} />
                 </Tabs>
             </Box>
             {selectedTab === 0 && <DetailsList />}

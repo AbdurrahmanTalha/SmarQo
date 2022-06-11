@@ -10,19 +10,13 @@ import OldRequest from './OldRequest';
 
 const Dashboard = () => {
     const [selectedTab, setSelectedTab] = React.useState(0);
-    const useStyles = makeStyles({
-        table: {
-            minWidth: "auto",
-            borderSpacing: "0 4px",
-            border: "none"
-        }
-    })
+
     const handleSelectedTab = (event, newValue) => {
         setSelectedTab(newValue);
     };
 
     return (
-        <div className="border-0 m-0 mb-24 max-w-full">
+        <div className="border-0 m-0 pb-24 max-w-full bg-[#F5F5F5]">
             <Box sx={{ width: '100%', bgcolor: '#1D1D1D' }} className="text-white border-0 lg:md:h-[333px] h-[64px]">
                 <div className="flex items-center ml-[17px] pt-[30px]">
                     <button className="b-triangle lg:md:hidden block"></button>
@@ -73,11 +67,11 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
-            <div className="rounded-[10px] mb-[172px] bg-[#ffff] mx-auto  w-[1176px] shadow-lg h-[443px] shadow-[#6361613d] flex justify-center border-1">
+            <div className="rounded-[10px] mb-[172px] bg-[#ffff] lg:md:mx-auto  lg:md:w-[1176px] shadow-lg lg:md:h-[443px] shadow-[#6361613d] flex justify-center border-1">
                 <div>
-                    <Box className="mb-[80px]">
+                    <Box className="lg:md:mb-[80px] mb-[20px]">
                         <Tabs
-                            TabIndicatorProps={{ style: { border: "2px solid #707070" } }}
+                            TabIndicatorProps={{ style: { border: "2px solid #707070", background: "#707070" } }}
                             value={selectedTab}
                             onChange={handleSelectedTab}
                             centered

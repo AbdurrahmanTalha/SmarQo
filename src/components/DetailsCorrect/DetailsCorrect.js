@@ -5,7 +5,7 @@ import "./DetailsCorrect.css"
 
 const DetailsCard = () => {
     return (
-        <div className="main_container_wrapper ml-[25px]">
+        <div className="main_container_wrapper ml-[25px] bg-[#F5F5F5]">
             <div className="lg:md:pt-[47px] mt-[105px] mx-auto h-auto  lg:md:pb-[53px] lg:md:pl-[53px] rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md  lg:md:bg-[#FFFFFF]  lg:md:w-[738px] w-auto lg:md:mx-auto">
                 <div className="flex lg:md:justify-between">
                     <div style={{ marginBottom: "37px" }} className="text-[42px] sm:flex justify-end self-end  lg:text-[58px] font-medium">Are these details

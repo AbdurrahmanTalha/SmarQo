@@ -42,7 +42,7 @@ const useStyles = makeStyles({
 const Login = () => {
   const classes = useStyles();
   return (
-    <div className="main_container_wrapper">
+    <div className="main_container_wrapper bg-[#F5F5F5]">
       <div className="card">
         <div style={{ fontSize: "2.8rem" }}>Login</div>
         <Input label="E-mail" name="email" placeholder="Enter your email" />
