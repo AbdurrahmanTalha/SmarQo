@@ -95,9 +95,9 @@ const OldRequest = () => {
                                     {
                                         row.liked
                                             ?
-                                            <button className="rounded-full py-[7px] flex items-center justify-center text-[16px] font-normal bg-[#1B4830] mr-[192px] h-[28px] w-[108px] px-[49px] text-white">Liked</button>
+                                            <button className="rounded-full py-[7px] flex items-center justify-center text-[16px] font-normal bg-[#1B4830] mr-[192px] h-[28px] w-[108px] px-[49px] mb-[10px] text-white">Liked</button>
                                             :
-                                            <button className="rounded-full py-[7px] flex items-center justify-center text-[16px] font-normal text-[#000]  w-[108px] h-[28px] border-2 mr-[192px] border-[#707070] px-[49px]">Disliked</button>
+                                            <button className="rounded-full mb-[10px] py-[7px] flex items-center justify-center text-[16px] font-normal text-[#000]  w-[108px] h-[28px] border-2 mr-[192px] border-[#707070] px-[49px]">Disliked</button>
 
                                     }</div>
                             </TableCell>

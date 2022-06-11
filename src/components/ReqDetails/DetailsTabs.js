@@ -13,7 +13,7 @@ const DetailsTabs = () => {
         setSelectedTab(newValue);
     };
     return (
-        <div className="border-0 m-0 p-0 ">
+        <div className="border-0 m-0 p-0 bg-[#F5F5F5]">
             <Box sx={{ width: '100%', bgcolor: '#1D1D1D' }} className="text-white border-0 pb-[1px] pt-[53px] ">
                 <p className="text-center mb-[28px] lg:md:text-[21px] text-[13px] text-[#ffffff] font-extralight">House Plans for a 2400 sqft land in Whitefield Banglore</p>
                 <Tabs

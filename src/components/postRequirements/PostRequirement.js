@@ -22,7 +22,7 @@ const PostRequirement = () => {
   const classes = useStyle();
 
   return (
-    <div className="main_container_wrapper">
+    <div className="main_container_wrapper bg-[#F5F5F5]">
       <div className={classes.headText}>
         Request <b>Smart Quotes</b> from professionals
       </div>

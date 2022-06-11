@@ -9,7 +9,7 @@ import './DetailsProfile.css'
 
 const DetailsProfile = () => {
     return (
-        <div className="border-0 m-0 p-0 mb-24">
+        <div className="border-0 m-0 p-0 pb-24 bg-[#F5F5F5]">
             <Box sx={{ width: '100%', bgcolor: '#1D1D1D' }} className="text-white border-0 h-[523px] ">
                 <div className="flex items-center ml-[17px] pt-[30px]">
                     <button className="b-triangle lg:md:hidden block"></button>

@@ -16,8 +16,8 @@ const ActiveRequest = () => {
         {
             id: 1,
             quote_type: "Construction Plan",
-            pending: false,
-            action: true
+            pending: true,
+            action: false
         },
         {
             id: 2,
@@ -47,7 +47,7 @@ const ActiveRequest = () => {
     return (
         <TableContainer>
             <Table sx={{ overflow: "auto" }} className={classes.table}>
-                <TableHead >
+                <TableHead>
                     <TableCell align="center">
                         <span className="text-[16px] lg:md:block hidden  font-medium mr-[149px] text-[#274962]">Quotes type</span>
                     </TableCell>
@@ -72,7 +72,7 @@ const ActiveRequest = () => {
                                         {row.quote_type}
                                     </div>
                                 </TableCell>
-                                <TableCell align="left" className="lg:md:hidden block ml-[34px]">
+                                <TableCell align="left" className="lg:md:hidden ml-[34px]">
                                     <div className="flex">
                                         <div className="mr-[144px]">
                                             <p className="text-[15px] font-bold mb-[24px] whitespace-nowrap">{row.quote_type}</p>
@@ -95,14 +95,14 @@ const ActiveRequest = () => {
                                         </div>
                                     </div>
                                 </TableCell>
-                                <TableCell className="lg:md:block hidden" align="left">
+                                <TableCell className="lg:md:flex justify-center items-center hidden" align="left">
                                     <div>
                                         {
                                             row.pending
                                                 ?
-                                                <button className="rounded-full w-[92px] lg:md:w-[160px] py-[7px] flex items-center justify-center text-[16px] font-normal text-[#000] border-2 lg:md:mr-[192px] border-[#707070] px-[49px]">Pending</button>
+                                                <button className="rounded-full mb-[10px] w-[92px] lg:md:w-[160px] py-[7px] flex items-center justify-center text-[16px] font-normal text-[#000] border-2 lg:md:mr-[192px] border-[#707070] px-[49px]">Pending</button>
                                                 :
-                                                <button className="rounded-full py-[7px] flex items-center justify-center text-[16px] font-normal lg:md:w-[160px] bg-[#1B3548] lg:md:px-[49px] w-[92px] text-white">Active</button>
+                                                <button className="rounded-full mb-[10px] lg:md:mr-[192px] py-[7px] flex items-center justify-center text-[16px] font-normal lg:md:w-[160px] bg-[#1B3548] lg:md:px-[49px] w-[92px] text-white">Active</button>
 
                                         }</div>
                                 </TableCell>
@@ -122,6 +122,7 @@ const ActiveRequest = () => {
                                         aria-expanded={open ? 'true' : undefined}
                                         aria-haspopup="true"
                                         onClick={handleClick}
+                                        
                                     >
                                         <MoreVertIcon />
                                     </IconButton>
