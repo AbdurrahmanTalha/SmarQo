@@ -107,19 +107,19 @@ const AccountSettings = () => {
                     </div>
 
                     <div className="lg:md:hidden block mt-[39px]">
-                            <div className="mb-[15px]">
-                                <p className="mb-[11px] text-[14px]">Name</p>
-                                <CustomInput aria-label="Demo input" placeholder="Name" />
-                            </div>
-                            <div className="mb-[15px]">
-                                <p className="mb-[11px] text-[14px]">Telephone Number</p>
-                                <CustomInput aria-label="Demo input" placeholder="Telephone Number " />
-                            </div>
-                            <div className="mb-[15px]">
-                                <p className="mb-[11px] text-[14px]">E-mail</p>
-                                <CustomInput aria-label="Demo input" placeholder="E-mail" />
-                            </div>
+                        <div className="mb-[15px]">
+                            <p className="mb-[11px] text-[14px]">Name</p>
+                            <CustomInput aria-label="Demo input" placeholder="Name" />
                         </div>
+                        <div className="mb-[15px]">
+                            <p className="mb-[11px] text-[14px]">Telephone Number</p>
+                            <CustomInput aria-label="Demo input" placeholder="Telephone Number " />
+                        </div>
+                        <div className="mb-[15px]">
+                            <p className="mb-[11px] text-[14px]">E-mail</p>
+                            <CustomInput aria-label="Demo input" placeholder="E-mail" />
+                        </div>
+                    </div>
 
                     <div className="lg:md:block hidden">
                         <div className="flex items-center">

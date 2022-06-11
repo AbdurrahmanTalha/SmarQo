@@ -8,7 +8,7 @@
 
 body {
   font-size: 62.5%;
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif !important;
 }
 
 a {
