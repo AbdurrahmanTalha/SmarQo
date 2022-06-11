@@ -16,7 +16,14 @@
         clip-path: polygon(100% 100%, 100% 0%, 0% 50%);
         background-color: #484848;
   }
-
+  li::marker 
+  {
+      font-size: 25px;
+      font-weight: bolder;
+      text-align: center;
+      display: flex;
+      align-items: center;
+  }
   @media (max-width: 600px) {
 
   }  
