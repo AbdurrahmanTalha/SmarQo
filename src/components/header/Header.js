@@ -33,8 +33,8 @@ const Header = () => {
   return (
     <div className="header_container">
       <div className="header">
-        <div className="left_header">
-          <div className="logo mr-[-45px] ml-[-45px] lg:md:ml-0">
+        <div className="left_header lg:md:mr-[-103px]">
+          <div className="logo mr-[-45px] ml-[-45px] lg:md:ml-[97px]">
             <img src={logo} alt="logo" />
           </div>
           <Link to="/" className="company_name text-3xl mr-[85px]  hidden lg:md:block">
@@ -65,7 +65,7 @@ const Header = () => {
                   <IconButton
                     onClick={handleClick}
                     size="small"
-                
+
                     aria-controls={open ? 'account-menu' : undefined}
                     aria-haspopup="true"
                     aria-expanded={open ? 'true' : undefined}
