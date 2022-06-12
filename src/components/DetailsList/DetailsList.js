@@ -66,7 +66,7 @@ const DetailsList = () => {
                         <h2 className='text-[24px] text-[#1B3548] lg:md:block hidden'>Filters</h2>
                         <div className="lg:md:hidden flex justify-center items-center">
                             <div className="lg:md:hidden flex items-center justify-center ">
-                                <Accordion expanded={expanded === 'panel1'} className="p-0" onChange={handleChange('panel1')}>
+                                <Accordion expanded={expanded === 'panel1'} className="p-0 lg:md:w-[100%] w-[80%] mx-auto" onChange={handleChange('panel1')}>
                                     <AccordionSummary
                                         expandIcon={<ExpandMoreIcon />}
                                         aria-controls="panel1bh-content"
@@ -102,7 +102,7 @@ const DetailsList = () => {
                                                     <div>
                                                         <h2 className="mt-[34px] text-xl text-center text-[#1D1D1D]">Price Range <span className='text-[13px]'>(per hour)</span></h2>
 
-                                                        <div className="flex justify-center items-center pl-[14px] mt-[42px] mb-[28px]">
+                                                        <div className="flex justify-center items-center pl-[14px] mt-[42px] mb-[28px] lg:md:w-[100%] w-[80%] mx-auto">
                                                             <Box width={316}>
                                                                 <ThemeProvider theme={useStyle}>
 
@@ -127,7 +127,7 @@ const DetailsList = () => {
 
 
                                                         <div className="flex justify-center">
-                                                            <div className="flex justify-between mb-[28px] w-[373px]">
+                                                            <div className="flex justify-between mb-[28px] lg:md:w-[373px] w-[90%] lg:md:ml-0 ml-auto">
                                                                 <Button variant="outlined" className="text-[#707070] border-[#707070]">High</Button>
                                                                 <Button variant="outlined" className="text-[#707070] border-[#707070] mr-[45px]">Low</Button>
                                                             </div>
@@ -135,34 +135,40 @@ const DetailsList = () => {
                                                     </div>
                                                 </div>
 
-                                                <div>
-                                                    <h2 className="mt-[30px] text-center text-xl text-[#1D1D1D] font-medium">Experience<span className='text-[13px] font-light'> (years)</span></h2>
+                                                <div className="flex justify-center items-center">
+                                                    <div>
+                                                        <h2 className="mt-[34px] text-xl text-center text-[#1D1D1D]">Experience<span className='text-[13px]'>(years)</span></h2>
 
-                                                    <div className="flex justify-center items-center pl-[14px] mt-[42px] mb-[28px]">
-                                                        <Box width={316}>
-                                                            <ThemeProvider theme={useStyle}>
+                                                        <div className="flex justify-center items-center pl-[14px] mt-[42px] mb-[28px] lg:md:w-[100%] w-[80%] mx-auto">
+                                                            <Box width={316}>
+                                                                <ThemeProvider theme={useStyle}>
 
-                                                                <Slider
-                                                                    sx={{
-                                                                        color: '#1B3548',
-                                                                        '& .MuiSlider-thumb': {
-                                                                            // borderRadius: '1px',
-                                                                            borderColor: "#333 !important"
-                                                                        },
-                                                                    }}
-                                                                    getAriaLabel={() => 'Minimum distance'}
-                                                                    value={experience}
-                                                                    onChange={handleChange2}
-                                                                    valueLabelDisplay="auto"
-                                                                    disableSwap
-                                                                />
-                                                            </ThemeProvider>
-                                                        </Box>
-                                                    </div>
+                                                                    <Slider
+                                                                        sx={{
+                                                                            color: '#1B3548',
+                                                                            '& .MuiSlider-thumb': {
+                                                                                // borderRadius: '1px',
+                                                                                borderColor: "#333 !important"
+                                                                            },
+                                                                        }}
+                                                                        getAriaLabel={() => 'Minimum distance'}
+                                                                        value={value1}
+                                                                        onChange={handleChange1}
+                                                                        valueLabelDisplay="auto"
+                                                                        disableSwap
+                                                                    />
+                                                                </ThemeProvider>
+                                                            </Box>
+                                                        </div>
 
-                                                    <div className="flex justify-between mb-[28px] w-[373px]">
-                                                        <Button variant="outlined" className="text-[#707070] border-[#707070]">High</Button>
-                                                        <Button variant="outlined" className="text-[#707070] border-[#707070] mr-[45px]">Low</Button>
+
+
+                                                        <div className="flex justify-center">
+                                                            <div className="flex justify-between mb-[28px] lg:md:w-[373px] w-[90%] lg:md:ml-0 ml-auto">
+                                                                <Button variant="outlined" className="text-[#707070] border-[#707070]">High</Button>
+                                                                <Button variant="outlined" className="text-[#707070] border-[#707070] mr-[45px]">Low</Button>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
 
@@ -300,8 +306,8 @@ const DetailsList = () => {
                         </div>
                     </div>
                     <Divider orientation="vertical" flexItem className="py-0" />
-                    <div>
-                        <div className="pl-[45px] lg:md:pt-[47px] mt-[40px] lg:md:pb-[53px] ">
+                    <div className="lg:md:w-[100%] w-[90%] mx-auto">
+                        <div className="lg:md:pl-[45px] pl-0 lg:md:pt-[47px] mt-[40px] lg:md:pb-[53px] ">
                             <div>
                                 <div className="lg:md:flex block justify-between ">
                                     <div className="flex">
@@ -373,7 +379,7 @@ const DetailsList = () => {
                         </div>
                         <Divider className="lg:md:mt-0 mt-[46.6px]" />
                         <div>
-                            <div className="pl-[45px] lg:md:pt-[47px] mt-[40px] lg:md:pb-[53px] ">
+                            <div className="lg:md:pl-[45px] pl-0 lg:md:pt-[47px] mt-[40px] lg:md:pb-[53px] ">
                                 <div>
                                     <div className="lg:md:flex block justify-between ">
                                         <div className="flex">
@@ -445,7 +451,7 @@ const DetailsList = () => {
                             </div>
                             <Divider className="lg:md:mt-0 mt-[46.6px]" />
                             <div>
-                                <div className="pl-[45px] lg:md:pt-[47px] mt-[40px] lg:md:pb-[53px] ">
+                                <div className="lg:md:pl-[45px] pl-0 lg:md:pt-[47px] mt-[40px] lg:md:pb-[53px] ">
                                     <div>
                                         <div className="lg:md:flex block justify-between ">
                                             <div className="flex">
