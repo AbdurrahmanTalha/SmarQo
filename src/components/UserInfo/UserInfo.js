@@ -153,6 +153,13 @@ const UserInfo = () => {
                 <div className="lg:md:mt-[70px] mt-[58px] ">
                     <h2 className="lg:md:text-[39px] text-[32px] text-[#1B3548] 
                     lg:md:mb-[41px] mb-[35px]">Password</h2>
+                    <div className="mr-[83px]">
+                        <div className="flex items-center lg:md:mb-[24px] mb-[20px] justify-between ">
+                            <p className="lg:md:mr-[0px] mr-[63px] lg:md:text-[15px] text-[12px]">New Password </p>
+                            <CustomInput aria-label="Demo input" placeholder="Password" />
+                        </div>
+                        <div className="flex items-center lg:md:mb-[24px] mb-[20px] justify-between ">
+                            <p className="lg:md:mr-[0px] mr-[63px] lg:md:text-[15px] text-[12px]">Confirm Password </p>
 
                     <div>
                         <div className="flex items-center lg:md:mb-[24px] mb-[20px]">
