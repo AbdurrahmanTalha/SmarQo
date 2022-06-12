@@ -342,9 +342,7 @@ const DetailsList = () => {
                                                 <img src={Flag} alt="" className="w-[30px] h-[19px] 
                                             ml-[13px] mt-2" />
                                             </div>
-                                            <div className={classes.btn} >
-                                                Connect
-                                            </div>
+                                            <button className="btn py-[10px] w-[107px] bg-[#0C0C0C] text-[12px] text-[#ffffff] rounded text-center">Connect</button>
                                         </div>
                                     </div>
 
@@ -363,7 +361,7 @@ const DetailsList = () => {
                                     </div>
                                     <div className="mt-[21px] flex justify-between">
                                         <div className="">
-                                            <p className="text-[16px] font-light"><span className="font-medium whitespace-nowrap">Comment: </span> Dear Client,  I am willing to provide you a best plan for
+                                            <p className="text-[16px] font-light lg:md:w-[360px]"><span className="font-medium whitespace-nowrap">Comment: </span> Dear Client,  I am willing to provide you a best plan for
                                                 your house...   <span className="italic text-[#1D43A2]">read more</span></p>
                                         </div>
                                         <div className="flex items-center mr-[20px]">
@@ -414,9 +412,7 @@ const DetailsList = () => {
                                                     <img src={Flag} alt="" className="w-[30px] h-[19px] 
                                             ml-[13px] mt-2" />
                                                 </div>
-                                                <div className={classes.btn} >
-                                                    Connect
-                                                </div>
+                                                <button className="btn py-[10px] w-[107px] bg-[#0C0C0C] text-[12px] text-[#ffffff] rounded text-center">Connect</button>
                                             </div>
                                         </div>
 
@@ -435,13 +431,13 @@ const DetailsList = () => {
                                         </div>
                                         <div className="mt-[21px] flex justify-between">
                                             <div className="">
-                                                <p className="text-[16px] font-light"><span className="font-medium whitespace-nowrap">Comment: </span> Dear Client,  I am willing to provide you a best plan for
+                                                <p className="text-[16px] font-light lg:md:w-[360px]"><span className="font-medium whitespace-nowrap">Comment: </span> Dear Client,  I am willing to provide you a best plan for
                                                     your house...   <span className="italic text-[#1D43A2]">read more</span></p>
                                             </div>
                                             <div className="flex items-center mr-[20px]">
                                                 <Button sx={{ color: "#4D5163" }} className="whitespace-nowrap text-[16px] text-center	mr-[75px] normal-case">View Profile</Button>
-                                                <div className={classes.btn} >
-                                                    Connect
+                                                <div >
+                                                <button className="btn py-[10px] lg:md:w-[160px] w-[236px] bg-[#0C0C0C] lg:md:text-[15px] text-[14px] text-[#ffffff] rounded text-center">Connect</button>
                                                 </div>
                                             </div>
 
@@ -486,9 +482,7 @@ const DetailsList = () => {
                                                         <img src={Flag} alt="" className="w-[30px] h-[19px] 
                                             ml-[13px] mt-2" />
                                                     </div>
-                                                    <div className={classes.btn} >
-                                                        Connect
-                                                    </div>
+                                                    <button className="btn py-[10px] w-[107px] bg-[#0C0C0C] text-[12px] text-[#ffffff] rounded text-center">Connect</button>
                                                 </div>
                                             </div>
 
@@ -507,14 +501,14 @@ const DetailsList = () => {
                                             </div>
                                             <div className="mt-[21px] flex justify-between">
                                                 <div className="">
-                                                    <p className="text-[16px] font-light"><span className="font-medium whitespace-nowrap">Comment: </span> Dear Client,  I am willing to provide you a best plan for
+                                                    <p className="text-[16px] font-light lg:md:w-[360px]"><span className="font-medium whitespace-nowrap">Comment: </span> Dear Client,  I am willing to provide you a best plan for
                                                         your house...   <span className="italic text-[#1D43A2]">read more</span></p>
                                                 </div>
                                                 <div className="flex items-center mr-[20px]">
                                                     <Button sx={{ color: "#4D5163" }} className="whitespace-nowrap text-[16px]	mr-[75px]">View Profile</Button>
-                                                    <div className={classes.btn} >
-                                                        Connect
-                                                    </div>
+                                                    <div >
+                                                <button className="btn py-[10px] lg:md:w-[160px] w-[236px] bg-[#0C0C0C] lg:md:text-[15px] text-[14px] text-[#ffffff] rounded text-center">Connect</button>
+                                                </div>
                                                 </div>
 
                                             </div>
