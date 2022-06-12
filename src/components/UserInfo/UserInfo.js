@@ -68,10 +68,9 @@ const UserInfo = () => {
                     <h2 className="text-[16px] text-[#FFFFFF] mt-[20px] ml-[33px] lg:md:hidden block"><span className="font-medium">User</span> <span className="font-light">Dashboard</span></h2>
                 </div>
             </Box>
-            {/* Card Start */}
             <div className="pt-[47px] pb-[53px] lg:md:w-[1082px] rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md bg-[#FFFFFF] lg:md:mx-auto
             lg:mt-[-220px] sm:mt-0 lg:md:pl-[88px] pl-[37px] lg:md:pr-[83px] pr-[30px] 
-            lg:md:pt-[66px] ">
+            lg:md:pt-[66px]">
                 <h2 className="lg:md:text-[30px] text-[#FFFFFF] lg:md:mt-[-130px] mt-0 lg:md:mb-[85px] mb-0  header"><span className="font-medium">User</span> <span className="font-light">Dashboard</span></h2>
                 <div className="w-full">
                     <div className="flex justify-between">
@@ -161,21 +160,16 @@ const UserInfo = () => {
                         <div className="flex items-center lg:md:mb-[24px] mb-[20px] justify-between ">
                             <p className="lg:md:mr-[0px] mr-[63px] lg:md:text-[15px] text-[12px]">Confirm Password </p>
 
-                    <div>
-                        <div className="flex items-center lg:md:mb-[24px] mb-[20px]">
-                            <p className="lg:md:mr-[81px] whitespace-nowrap	 mr-[32px] lg:md:text-[15px] text-[12px]">New Password </p>
                             <CustomInput aria-label="Demo input" placeholder="Password" />
-                        </div>
-                        <div className="flex items-center lg:md:mb-[24px] mb-[20px]">
-                            <p className="lg:md:mr-[57px] whitespace-nowrap	 mr-[12px] lg:md:text-[15px] text-[12px]">Confirm Password </p>
-                            <CustomInput aria-label="Demo input" placeholder="Password" />
+
+
+
                         </div>
                     </div>
-
-                    <button className="btn py-[11px] lg:md:w-[241px] w-[236px] bg-[#0C0C0C] lg:md:mt-[38px] mt-[45px] lg:md:mb-[19px] mb-[193px] lg:md:text-[15px] text-[14px] text-[#ffffff] rounded text-center">Change my password</button>
                 </div>
+                <button className="btn py-[11px] lg:md:w-[241px] w-[236px] bg-[#0C0C0C] lg:md:mt-[38px] mt-[45px] lg:md:mb-[19px] mb-[193px] lg:md:text-[15px] text-[14px] text-[#ffffff] rounded text-center">Change my password</button>
             </div>
-        </div >
+        </div>
     );
 };
 
