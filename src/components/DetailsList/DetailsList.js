@@ -330,7 +330,7 @@ const DetailsList = () => {
                                             your house...   <span className="italic text-[8px] text-[#1D43A2]">read more</span></p>
                                     </div>
                                     <div className="lg:md:hidden block">
-                                        <div className="flex justify-between items-center">
+                                        <div className="flex justify-between items-center mr-[20px]">
                                             <div className="flex justify-between items-center">
                                                 <h2 className="text-[16px] font-bold mt-[8px] lg:md:mb-[64px]">INR 3500</h2>
                                                 <img src={Flag} alt="" className="w-[30px] h-[19px] 
@@ -360,7 +360,7 @@ const DetailsList = () => {
                                             <p className="text-[16px] font-light"><span className="font-medium whitespace-nowrap">Comment: </span> Dear Client,  I am willing to provide you a best plan for
                                                 your house...   <span className="italic text-[#1D43A2]">read more</span></p>
                                         </div>
-                                        <div className="flex items-center mr-[10px]">
+                                        <div className="flex items-center mr-[20px]">
                                             <Button sx={{ color: "#4D5163" }} className="whitespace-nowrap text-[16px] 	mr-[75px]">View Profile</Button>
                                             <div className={classes.btn} >
                                                 Connect
@@ -402,7 +402,7 @@ const DetailsList = () => {
                                                 your house...   <span className="italic text-[8px] text-[#1D43A2]">read more</span></p>
                                         </div>
                                         <div className="lg:md:hidden block">
-                                            <div className="flex justify-between items-center">
+                                            <div className="flex justify-between items-center mr-[20px]">
                                                 <div className="flex justify-between items-center">
                                                     <h2 className="text-[16px] font-bold mt-[8px] lg:md:mb-[64px]">INR 3500</h2>
                                                     <img src={Flag} alt="" className="w-[30px] h-[19px] 
@@ -432,7 +432,7 @@ const DetailsList = () => {
                                                 <p className="text-[16px] font-light"><span className="font-medium whitespace-nowrap">Comment: </span> Dear Client,  I am willing to provide you a best plan for
                                                     your house...   <span className="italic text-[#1D43A2]">read more</span></p>
                                             </div>
-                                            <div className="flex items-center mr-[10px]">
+                                            <div className="flex items-center mr-[20px]">
                                                 <Button sx={{ color: "#4D5163" }} className="whitespace-nowrap text-[16px] text-center	mr-[75px] normal-case">View Profile</Button>
                                                 <div className={classes.btn} >
                                                     Connect
@@ -474,7 +474,7 @@ const DetailsList = () => {
                                                     your house...   <span className="italic text-[8px] text-[#1D43A2]">read more</span></p>
                                             </div>
                                             <div className="lg:md:hidden block">
-                                                <div className="flex justify-between items-center">
+                                                <div className="flex justify-between items-center mr-[20px]">
                                                     <div className="flex justify-between items-center">
                                                         <h2 className="text-[16px] font-bold mt-[8px] lg:md:mb-[64px]">INR 3500</h2>
                                                         <img src={Flag} alt="" className="w-[30px] h-[19px] 
@@ -504,7 +504,7 @@ const DetailsList = () => {
                                                     <p className="text-[16px] font-light"><span className="font-medium whitespace-nowrap">Comment: </span> Dear Client,  I am willing to provide you a best plan for
                                                         your house...   <span className="italic text-[#1D43A2]">read more</span></p>
                                                 </div>
-                                                <div className="flex items-center mr-[10px]">
+                                                <div className="flex items-center mr-[20px]">
                                                     <Button sx={{ color: "#4D5163" }} className="whitespace-nowrap text-[16px]	mr-[75px]">View Profile</Button>
                                                     <div className={classes.btn} >
                                                         Connect

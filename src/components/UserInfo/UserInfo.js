@@ -116,8 +116,8 @@ const UserInfo = () => {
                     <div className="w-full">
                         <div className="flex justify-between">
                             <p className="lg:md:text-[16px] text-[14px] text-[#1D1D1D]">Phone Number</p>
-                            <label for="4" class="inline-flex relative items-center mr-5 cursor-pointer">
-                                <input type="checkbox" value="" id="4" class="sr-only peer" />
+                            <label for="100" class="inline-flex relative items-center mr-5 cursor-pointer">
+                                <input type="checkbox" value="" id="100" class="sr-only peer" />
                                 <div class="lg:md:w-[55px] w-[40px] lg:md:h-[28px] h-[21px] bg-[#AEAEAE] rounded-full peer peer-checked:ring-1 dark:peer-checked:ring-[#707070] dark:[#AEAEAE] peer-checked:after:translate-x-full  after:content-[''] after:absolute lg:md:after:top-[3.5px] after:top-[2.5px]
                                 after:left-[4px] after:bg-[#1D1D1D] 
                                 peer-checked:after:bg-[#707070] after:border-[#1D1D1D] peer-checked:after:border-[#707070] after:rounded-full lg:md:after:h-[21px] after:h-[15px] lg:md:after:w-[21px] 
@@ -156,11 +156,11 @@ const UserInfo = () => {
 
                     <div>
                         <div className="flex items-center lg:md:mb-[24px] mb-[20px]">
-                            <p className="lg:md:mr-[81px] mr-[63px] lg:md:text-[15px] text-[12px]">New Password </p>
+                            <p className="lg:md:mr-[81px] whitespace-nowrap	 mr-[32px] lg:md:text-[15px] text-[12px]">New Password </p>
                             <CustomInput aria-label="Demo input" placeholder="Password" />
                         </div>
                         <div className="flex items-center lg:md:mb-[24px] mb-[20px]">
-                            <p className="lg:md:mr-[57px] mr-[43px] lg:md:text-[15px] text-[12px]">Confirm Password </p>
+                            <p className="lg:md:mr-[57px] whitespace-nowrap	 mr-[12px] lg:md:text-[15px] text-[12px]">Confirm Password </p>
                             <CustomInput aria-label="Demo input" placeholder="Password" />
                         </div>
                     </div>
