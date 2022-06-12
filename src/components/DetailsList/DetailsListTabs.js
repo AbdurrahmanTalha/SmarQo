@@ -38,8 +38,8 @@ const DetailsListTabs = () => {
                     onChange={handleSelectedTab}
                     centered
                 >
-                    <Tab label={<span className="text-[#ffffff] text-[18px] normal-case">Details List</span>} />
-                    <Tab label={<span className="text-[#ffffff] text-[18px] normal-case">Connected</span>} />
+                    <Tab label={<span className="text-[#ffffff]  text-[13px] lg:md:text-[18px] normal-case">Details List</span>} />
+                    <Tab label={<span className="text-[#ffffff] normal-case text-[13px] lg:md:text-[18px]">Connected</span>} />
                 </Tabs>
             </Box>
             {selectedTab === 0 && <DetailsList />}
