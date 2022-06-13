@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <div className="header_container">
       <div className="header">
-        <div className="left_header">
+        <div className="left_header lg:ml-[14%]">
           <div className="logo mr-[-45px] ml-[-45px] lg:md:ml-0">
             <img src={logo} alt="logo" />
           </div>
