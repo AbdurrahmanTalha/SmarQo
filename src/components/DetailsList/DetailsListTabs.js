@@ -22,9 +22,9 @@ const DetailsListTabs = () => {
                             <p className="text-[17px] font-extralight lg:md:block hidden  text-[#FFFFFF]">Professionals are viewing your request now!<br></br>
                                 Please wait a few more minutes to get all quotes.</p>
                         </div>
-                        <div className="text-center">
-                            <p className="lg:md:text-[45px] font-medium text-[23px]">23</p>
-                            <p className="lg:md:text-[28px] font-light text-[14px]">QUOTES</p>
+                        <div className="text-center flex flex-col justify-center items-center">
+                            <p className="lg:md:text-[26px] font-medium text-[23px]">23</p>
+                            <p className="lg:md:text-[20px] font-light text-[14px]">QUOTES</p>
                         </div>
                     </div>
                 </>}
