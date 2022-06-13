@@ -58,10 +58,10 @@ const DetailsList = () => {
 
 
     return (
-        <div className="main_container_wrapper py-0 px-0 lg:md:py-[3rem] lg:md:px-[3rem]">
-            <div className="lg:md:mx-auto lg:w-[1302px]  pb-[50px] rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md  lg:md:bg-[#FFFFFF] bg-[#FFFF]">
+        <div className="main_container_wrapper py-0 px-0 lg:md:py-[12px] lg:md:px-[3rem]">
+            <div className="lg:md:mx-auto lg:w-[1302px] pb-[50px] rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md  lg:md:bg-[#FFFFFF] bg-[#FFFF]">
                 <div className="lg:md:flex block w-full">
-                    <div className='lg:md:pt-[47px] lg:md:pl-[53px] lg:md:pb-[53px] '>
+                    <div className='lg:md:pt-[47px] lg:md:pl-[53px] lg:md:pb-[53px] lg:md:mt-[25px]'>
                         <h2 className='text-[20px] text-[#1B3548] lg:md:block hidden'>Filters</h2>
                         <div className="lg:md:hidden flex justify-center items-center">
                             <div className="lg:md:hidden flex items-center justify-center overflow-x-hidden">
@@ -205,25 +205,38 @@ const DetailsList = () => {
 
                         <div className="lg:md:block hidden">
                             <div className='flex mt-[10px] items-center'>
-                                <div className="flex items-center justify-center mr-[30px]">
+                                <div className="flex items-center justify-center mr-[68px]">
                                     <h2 className='text-[35px] p-2'><IoShieldCheckmark /></h2>
                                     <div>
                                         <h2 className="text-[#1D1D1D] font-normal text-[16px]">Verified Profiles</h2>
                                         <h2 className="text-[#1D1D1D] text-[12px] font-light">(Show only verified profiles)</h2>
                                     </div>
                                 </div>
-                                <Checkbox
+                                {/* <Checkbox
                                     {...label}
-                                    className="mr-[20px] w-[1rem] h-[1rem] border-[6px]"
+                                    className="w-[2rem] h-[2rem]"
                                     sx={{
-                                        color: '#1B3548',
+                                        color: '#707070',
                                         '& .MuiSlider-thumb': {
-                                            // borderRadius: '1px',
-                                            borderColor: "#1B3548 !important",
+                                            fontSize: '33px',
+                                            borderRadius: '6px',
+                                            border:'1px',
+                                            borderColor: "#707070 !important",
                                             bgcolor: "#fff"
                                         },
                                     }}
-                                    size="small"
+                                    size="medium"
+                                /> */}
+                                <Checkbox
+                                    {...label}
+                                    sx={{
+                                        '& .MuiSvgIcon-root': {
+                                            fontSize: 33,
+                                            borderRadius: '6px',
+                                            borderColor: "#707070 !important",
+                                            bgcolor: "#fff"
+                                        }
+                                    }}
                                 />
                             </div>
                             <div>
