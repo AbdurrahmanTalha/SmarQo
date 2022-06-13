@@ -18,12 +18,13 @@ const DetailsListTabs = () => {
                 {selectedTab === 0 && <>
                     <div className="lg:md:px-[127px] mb-[32px]  lg:md:flex w-auto justify-between">
                         <div>
-                            <h2 className="mb-[32px] lg:md:text-[20px]  text-[13px] lg:md:font-medium font-extralight lg:md:text-left text-center">House Plans for a 2400 sqft land in Whitefield Banglore</h2>
-                            <p className="text-[17px] font-extralight lg:md:block hidden  text-[#FFFFFF]">Professionals are viewing your request now!<br></br>
+                            <h2 className="mb-[32px] lg:md:text-[20px]  text-[13px] 
+                            lg:md:font-regular font-extralight lg:md:text-left text-center">House Plans for a 2400 sqft land in Whitefield Banglore</h2>
+                            <p className="text-[14px] font-extralight lg:md:block hidden  text-[#FFFFFF]">Professionals are viewing your request now!<br></br>
                                 Please wait a few more minutes to get all quotes.</p>
                         </div>
                         <div className="text-center flex flex-col justify-center items-center">
-                            <p className="lg:md:text-[26px] font-medium text-[23px]">23</p>
+                            <p className="lg:md:text-[50px] font-medium text-[23px]">23</p>
                             <p className="lg:md:text-[20px] font-light text-[14px]">QUOTES</p>
                         </div>
                     </div>
@@ -38,8 +39,8 @@ const DetailsListTabs = () => {
                     onChange={handleSelectedTab}
                     centered
                 >
-                    <Tab label={<span className="text-[#ffffff]  text-[13px] lg:md:text-[18px] normal-case">Details List</span>} />
-                    <Tab label={<span className="text-[#ffffff] normal-case text-[13px] lg:md:text-[18px]">Connected</span>} />
+                    <Tab label={<span className="text-[#ffffff]  text-[13px] lg:md:text-[15px] normal-case mb-[10px]">Details List</span>} />
+                    <Tab label={<span className="text-[#ffffff] normal-case text-[13px] lg:md:text-[15px] mb-[10px]">Smart quotes</span>} />
                 </Tabs>
             </Box>
             {selectedTab === 0 && <DetailsList />}
