@@ -33,8 +33,10 @@ const Header = () => {
   return (
     <div className="header_container">
       <div className="header">
-        <div className="left_header lg:ml-[13%]">
-          <div className="logo mr-[-45px] ml-[-45px] lg:md:ml-[97px]">
+
+        <div className="left_header lg:ml-[14%]">
+          <div className="logo mr-[-45px] ml-[-45px] lg:md:ml-0">
+
             <img src={logo} alt="logo" />
           </div>
           <Link to="/" className="company_name text-3xl mr-[85px]  hidden lg:md:block">

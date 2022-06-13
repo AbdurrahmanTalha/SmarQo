@@ -46,6 +46,7 @@ const RoutesPath = () => {
         <Route exact path={paths.userInfo} element={<UserInfo></UserInfo>}></Route>
         <Route exact path={paths.dashboard} element={<Dashboard></Dashboard>}></Route>
         <Route exact path={paths.accountSettings} element={<AccountSettings></AccountSettings>}></Route>
+        <Route exact path={paths.chat} element={<Chat></Chat>}></Route>
       </Routes>
     </ThemeProvider>
   );
