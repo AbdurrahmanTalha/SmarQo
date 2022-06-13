@@ -24,6 +24,7 @@ const Chat = () => {
                 </div>
                 <Divider variant="middle" className="shadow-sm w-[100%] lg:md:mt-[21px] lg:md:mb-[29px] mx-auto bg-[#f5ecec] mt-[14px]" />
 
+                <div className='scroller'>
                 {/* Message start */}
                 <div className="lg:md:px-[38px] lg:md:mt-0 mt-[116px]">
                     <div className="flex flex-col justify-center items-center 
@@ -56,6 +57,23 @@ const Chat = () => {
                             <div className="lg:md:w-[298px] w-[259px] lg:md:h-[58px] h-[51px] bg-[#1D1D1D] lg:md:px-[20px] px-[17px] lg:md:py-[16px] py-[10px] rounded-xl">
                                 <p className="lg:md:text-[14px] text-[12px] text-[#FFFFFF]">
                                     House Plan required for a 2400Sqf
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="flex justify-start  lg:md:mt-[0px] mt-[21px]">
+                            <div className="lg:md:w-[391px] w-[340px] lg:md:h-[148px] h-[91px] bg-[#D0CECE] lg:md:px-[20px] px-[17px] lg:md:py-[16px] py-[10px] rounded-xl">
+                                <p className="lg:md:text-[14px] text-[12px] text-[#060606]">Quote request
+                                    <br /> House Plan required for a 2400Sqf land in White
+                                    <br /> field Bangalore
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="flex justify-end  lg:md:mt-[0px] mt-[21px]">
+                            <div className="lg:md:w-[391px] w-[340px] lg:md:h-[61px] h-[53px] bg-[#1D1D1D] lg:md:px-[20px] px-[17px] lg:md:py-[16px] py-[10px] rounded-xl">
+                                <p className="lg:md:text-[14px] text-[12px] text-[#FFFFFF]">
+                                    House Plan required for a 2400Sqf land in White
                                 </p>
                             </div>
                         </div>
@@ -123,10 +141,28 @@ const Chat = () => {
                                 </p>
                             </div>
                         </div>
+
+                        <div className="flex justify-center  lg:md:mt-[0px] mt-[21px]">
+                            <div className="lg:md:w-[391px] w-[340px] lg:md:h-[148px] h-[91px] bg-[#D0CECE] lg:md:px-[20px] px-[17px] lg:md:py-[16px] py-[10px] rounded-xl">
+                                <p className="lg:md:text-[14px] text-[12px] text-[#060606]">Quote request
+                                    <br /> House Plan required for a 2400Sqf land in White
+                                    <br /> field Bangalore
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="flex justify-center  lg:md:mt-[0px] mt-[21px]">
+                            <div className="lg:md:w-[391px] w-[340px] lg:md:h-[61px] h-[53px] bg-[#1D1D1D] lg:md:px-[20px] px-[17px] lg:md:py-[16px] py-[10px] rounded-xl">
+                                <p className="lg:md:text-[14px] text-[12px] text-[#FFFFFF]">
+                                    House Plan required for a 2400Sqf land in White
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     </div>
 
 
+                </div>
                 </div>
 
                 {/* Input Field */}
@@ -153,6 +189,8 @@ const Chat = () => {
                         </label>
                     </form>
                 </div>
+                
+
             </div>
         </div>
     );
