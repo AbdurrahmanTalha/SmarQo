@@ -13,8 +13,8 @@ import Feedback from "../Feedback/Feedback";
 import UserInfo from "../UserInfo/UserInfo";
 import Dashboard from "../Dashboard/Dashboard";
 import AccountSettings from "../AccountSettings/AccountSettings";
-
 import Chat from "../Chat/Chat";
+import Message from "../Chat/Message";
 
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 
@@ -47,6 +47,7 @@ const RoutesPath = () => {
         <Route exact path={paths.dashboard} element={<Dashboard></Dashboard>}></Route>
         <Route exact path={paths.accountSettings} element={<AccountSettings></AccountSettings>}></Route>
         <Route exact path={paths.chat} element={<Chat></Chat>}></Route>
+        <Route exact path={paths.message} element={<Message></Message>}></Route>
       </Routes>
     </ThemeProvider>
   );
