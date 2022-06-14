@@ -10,7 +10,7 @@ const Message = () => {
         <div className="bg-[#F5F5F5] mx-auto lg:md:mb-[154px] mb-[114.5px] px-auto">
             <div className="pt-[47px] rounded-[10px] lg:md:shadow-[#6361613d] lg:md:shadow-md bg-[#FFFFFF] lg:md:pt-[22px] lg:md:mt-[30px] flex">
 
-                {/* Contact Part */}
+                {/* Contact Part    */}
                 <div className="lg:md:px-[10px] lg:md:w-[300px] xl:w-[350px] mx-auto w-full ">
                     <div className="mb-[12px] lg:md:w-[300px] xl:w-[350px] mx-auto w-[90%]">
                         <label class="relative block">
