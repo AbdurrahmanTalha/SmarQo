@@ -8,16 +8,16 @@ import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
 import Contacts from './Contacts';
 
 const blue = {
-    50: '#F0F7FF',
-    100: '#C2E0FF',
-    200: '#80BFFF',
-    300: '#66B2FF',
-    400: '#3399FF',
-    500: '#007FFF',
-    600: '#0072E5',
-    700: '#0059B2',
-    800: '#004C99',
-    900: '#003A75',
+  50: '#F0F7FF',
+  100: '#C2E0FF',
+  200: '#80BFFF',
+  300: '#66B2FF',
+  400: '#3399FF',
+  500: '#007FFF',
+  600: '#0072E5',
+  700: '#0059B2',
+  800: '#004C99',
+  900: '#003A75',
 };
 
 const Tab = styled(TabUnstyled)`
@@ -59,18 +59,18 @@ const TabsList = styled(TabsListUnstyled)`
 `;
 
 const MessageTab = () => {
-    return (
-        <div className='mx-auto flex justify-center'>
-            <TabsUnstyled defaultValue={0} className='flex flex-col items-center justify-center'>
-                <TabsList>
-                    <Tab>All messages</Tab>
-                    <Tab>Unread</Tab>
-                </TabsList>
-                <TabPanel value={0}><Contacts /></TabPanel>
-                <TabPanel value={1}><h2 className="text-center text-slate-400 mt-[10px]">No Unread Message</h2></TabPanel>
-            </TabsUnstyled>
-        </div>
-    );
+  return (
+    <div className='mx-auto flex justify-center'>
+      <TabsUnstyled defaultValue={0} className='flex flex-col items-center justify-center'>
+        <TabsList>
+          <Tab>All messages</Tab>
+          <Tab>Unread</Tab>
+        </TabsList>
+        <TabPanel value={0}><Contacts /></TabPanel>
+        <TabPanel value={1}><h2 className="text-center text-slate-400 mt-[10px]">No Unread Message</h2></TabPanel>
+      </TabsUnstyled>
+    </div>
+  );
 };
 
 export default MessageTab;

@@ -45,7 +45,7 @@ const ActiveRequest = () => {
         "Post Similar request"
     ]
     return (
-        <TableContainer>
+        <TableContainer className="p-5">
             <Table sx={{ overflow: "hidden" }} className={classes.table}>
                 <TableHead>
                     <TableCell align="center">
@@ -60,7 +60,7 @@ const ActiveRequest = () => {
                         <span className="ml-[201px] lg:md:block hidden text-[16px] font-medium  text-[#274962" >Details</span>
                     </TableCell>
                 </TableHead>
-                <TableBody className="align-middle">
+                <TableBody className="align-middle px-10">
                     {
                         tableData.map((row) => (
                             <TableRow

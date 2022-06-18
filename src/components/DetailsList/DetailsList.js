@@ -110,8 +110,24 @@ const DetailsList = () => {
 
 
                                                     <div className="flex justify-between mb-[28px] w-[373px]">
-                                                        <Button variant="outlined" className="text-[#707070] border-[#707070]">High</Button>
-                                                        <Button variant="outlined" className="text-[#707070] border-[#707070] mr-[45px]">Low</Button>
+                                                        <TextField fullWidth sx={{
+                                                            "& .MuiOutlinedInput-root": {
+                                                                height: "30px !important",
+                                                                borderColor: "#707070",
+                                                                border: 1,
+                                                                width: "75px",
+                                                                bgcolor: "#F5F5F5"
+                                                            }
+                                                        }} id="fullWidth" />
+                                                        <TextField fullWidth sx={{
+                                                            "& .MuiOutlinedInput-root": {
+                                                                height: "30px !important",
+                                                                borderColor: "#707070",
+                                                                border: 1,
+                                                                width: "75px",
+                                                                bgcolor: "#F5F5F5"
+                                                            }
+                                                        }} id="fullWidth" />
                                                     </div>
                                                 </div>
 
@@ -125,8 +141,24 @@ const DetailsList = () => {
                                                     </div>
 
                                                     <div className="flex justify-between mb-[28px] w-[373px]">
-                                                        <Button variant="outlined" className="text-[#707070] border-[#707070]">High</Button>
-                                                        <Button variant="outlined" className="text-[#707070] border-[#707070] mr-[45px]">Low</Button>
+                                                        <TextField fullWidth sx={{
+                                                            "& .MuiOutlinedInput-root": {
+                                                                height: "30px !important",
+                                                                borderColor: "#707070",
+                                                                border: 1,
+                                                                width: "75px",
+                                                                bgcolor: "#F5F5F5"
+                                                            }
+                                                        }} id="fullWidth" />
+                                                        <TextField fullWidth sx={{
+                                                            "& .MuiOutlinedInput-root": {
+                                                                height: "30px !important",
+                                                                borderColor: "#707070",
+                                                                border: 1,
+                                                                width: "75px",
+                                                                bgcolor: "#F5F5F5"
+                                                            }
+                                                        }} id="fullWidth" />
                                                     </div>
                                                 </div>
 
@@ -237,8 +269,24 @@ const DetailsList = () => {
                                     </Box>
                                 </div>
                                 <div className="flex justify-between mb-[28px] w-[373px]">
-                                    <Button variant="outlined" className="text-[#707070] h-[36px] w-[90px] border-[#707070]"></Button>
-                                    <Button variant="outlined" className="text-[#707070] mr-[61px] h-[36px] w-[90px] border-[#707070]"></Button>
+                                    <TextField fullWidth sx={{
+                                        "& .MuiOutlinedInput-root": {
+                                            height: "30px !important",
+                                            borderColor: "#707070",
+                                            border: 1,
+                                            width: "75px",
+                                            bgcolor: "#F5F5F5"
+                                        }
+                                    }} id="fullWidth" />
+                                    <TextField fullWidth sx={{
+                                        "& .MuiOutlinedInput-root": {
+                                            height: "30px !important",
+                                            borderColor: "#707070",
+                                            border: 1,
+                                            width: "75px",
+                                            bgcolor: "#F5F5F5"
+                                        }
+                                    }} id="fullWidth" />
                                 </div>
                             </div>
                             <div>
