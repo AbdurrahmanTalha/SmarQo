@@ -9,10 +9,9 @@ const Message = () => {
         <div className="bg-[#F5F5F5] flex justify-center items-center  lg:md:mb-[154px] mb-[114.5px]">
             <div className="pt-[47px] rounded-[10px] lg:md:shadow-[#6361613d] lg:max-w-[1463px]  lg:md:shadow-md bg-[#FFFFFF] lg:md:pt-[22px] mt-[40px] mb-[50px]  lg:md:mt-[30px] flex">
 
-                {/* Contact Part */}
-                <div className="lg:md:px-[10px] lg:w-[300px] md:w-auto xl:w-[350px] mx-auto w-full ">
-                    {/* Input Field Consturction Request and Search by name */}
-                    <div className="mb-[12px] lg:md:max-w-[300px] xl:w-[350px] mx-auto w-[90%]">
+                {/* Contact Part    */}
+                <div className="lg:md:px-[10px] lg:md:w-[300px] xl:w-[350px] mx-auto w-full ">
+                    <div className="mb-[12px] lg:md:w-[300px] xl:w-[350px] mx-auto w-[90%]">
                         <label class="relative block">
                             <input class="placeholder:text-[#000000] block text-[13px] bg-white w-full border border-[#707070] rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Construction Request" type="text" name="req" />
                             <span class="absolute inset-y-0 left-0 flex items-center 

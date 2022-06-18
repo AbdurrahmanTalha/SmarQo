@@ -215,7 +215,7 @@ const DetailsList = () => {
                                             height: "30px !important",
                                             borderColor: "#707070",
                                             border: 1,
-                                            width: "90px",
+                                            width: "75px",
                                             bgcolor: "#F5F5F5"
                                         }
                                     }} id="fullWidth" />
@@ -225,7 +225,7 @@ const DetailsList = () => {
                                             height: "30px !important",
                                             borderColor: "#707070",
                                             border: 1,
-                                            width: "90px",
+                                            width: "75px",
                                             bgcolor: "#F5F5F5"
                                         }
                                     }} id="fullWidth" />
@@ -263,7 +263,7 @@ const DetailsList = () => {
                                             height: "30px !important",
                                             borderColor: "#707070",
                                             border: 1,
-                                            width: "90px",
+                                            width: "75px",
                                             bgcolor: "#F5F5F5"
                                         }
                                     }} id="fullWidth" />
@@ -273,7 +273,7 @@ const DetailsList = () => {
                                             height: "30px !important",
                                             borderColor: "#707070",
                                             border: 1,
-                                            width: "90px",
+                                            width: "75px",
                                             bgcolor: "#F5F5F5"
                                         }
                                     }} id="fullWidth" />
