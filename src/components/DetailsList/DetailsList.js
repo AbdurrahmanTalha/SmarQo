@@ -340,7 +340,7 @@ const DetailsList = () => {
                                                     your house...   <span className="italic text-[#1D43A2]">read more</span></p>
                                             </div>
                                             <div className="flex items-center ml-[20px]">
-                                                <Button sx={{ color: "#4D5163" }} className="whitespace-nowrap text-[15px] text-center font-medium	mr-[75px] normal-case hover:bg-[#FFFFFF]">View Profile</Button>
+                                                <Button sx={{ color: "#4D5163" }} className="whitespace-nowrap text-[15px] text-center font-medium	mr-[75px] normal-case">View Profile</Button>
                                                 <div >
                                                     <button className="btn py-[10px] lg:md:w-[160px] w-[236px] bg-[#0C0C0C] lg:md:text-[16px] text-[14px] text-[#ffffff] rounded text-center font-medium ">Connect</button>
                                                 </div>
@@ -410,7 +410,7 @@ const DetailsList = () => {
                                                     your house...   <span className="italic text-[#1D43A2]">read more</span></p>
                                             </div>
                                             <div className="flex items-center ml-[20px]">
-                                                <Button sx={{ color: "#4D5163" }} className="whitespace-nowrap text-[15px] text-center font-medium	mr-[75px] normal-case hover:bg-[#FFFFFF]">View Profile</Button>
+                                                <Button sx={{ color: "#4D5163" }} className="whitespace-nowrap text-[15px] text-center font-medium	mr-[75px] normal-case">View Profile</Button>
                                                 <div >
                                                     <button className="btn py-[10px] lg:md:w-[160px] w-[236px] bg-[#0C0C0C] lg:md:text-[16px] text-[14px] text-[#ffffff] rounded text-center font-medium">Connect</button>
                                                 </div>
@@ -481,7 +481,7 @@ const DetailsList = () => {
                                                     your house...   <span className="italic text-[#1D43A2]">read more</span></p>
                                             </div>
                                             <div className="flex items-center">
-                                                <Button sx={{ color: "#4D5163" }} className="whitespace-nowrap text-[16px]	mr-[75px] hover:bg-[#FFFFFF]">View Profile</Button>
+                                                <Button sx={{ color: "#4D5163" }} className="whitespace-nowrap text-[16px]	mr-[75px]">View Profile</Button>
                                                 <div >
                                                     <button className="btn py-[10px] lg:md:w-[160px] w-[236px] bg-[#0C0C0C] lg:md:text-[16px] text-[14px] text-[#ffffff] rounded text-center font-medium">Connect</button>
                                                 </div>
