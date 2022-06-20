@@ -166,11 +166,16 @@ const DetailsList = () => {
                                         <h2 className="text-[#1D1D1D] text-[12px] font-light">(Show only verified profiles)</h2>
                                     </div>
                                 </div>
-                                
+
                                 <Checkbox
-                                    icon={<SquareOutlinedIcon />}
+                                    icon={<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 33 33">
+                                        <g id="Rectangle_49" data-name="Rectangle 49" fill="#fff" stroke="#707070" stroke-width="1">
+                                            <rect width="24" height="24" rx="6" stroke="none" />
+                                            <rect x="0.5" y="0.5" width="24" height="24" rx="5.5" fill="none" />
+                                        </g>
+                                    </svg>
+                                    }
                                     checkedIcon={<CheckBoxIcon />}
-                                    // iconStyle={{ border: "10px solid" }}
                                     sx={{
                                         "& .MuiSvgIcon-root": {
                                             fontSize: 33,
