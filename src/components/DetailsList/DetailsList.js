@@ -167,14 +167,9 @@ const DetailsList = () => {
                                     </div>
                                 </div>
                                 <Checkbox
-                                    icon={<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 33 33">
-                                        <g id="Rectangle_49" data-name="Rectangle 49" fill="#fff" stroke="#707070" stroke-width="1">
-                                            <rect width="24" height="24" rx="6" stroke="none" />
-                                            <rect x="0.5" y="0.5" width="24" height="24" rx="5.5" fill="none" />
-                                        </g>
-                                    </svg>
-                                    }
+                                    icon={<SquareOutlinedIcon />}
                                     checkedIcon={<CheckBoxIcon />}
+                                    // iconStyle={{ border: "10px solid" }}
                                     sx={{
                                         "& .MuiSvgIcon-root": {
                                             fontSize: 33,
